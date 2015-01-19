@@ -123,6 +123,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Views\Contact\Index.cshtml" />
+    <Content Include="contact\index.html" />
     <Content Include="Content\css\animate.css" />
     <Content Include="Content\css\bootstrap-theme.min.css" />
     <Content Include="Content\css\bootstrap.css" />
@@ -365,6 +366,9 @@
     <None Include="Views\Sessions\Index.cshtml" />
     <Content Include="Content\css\style.css" />
     <None Include="Views\Venue\Index.cshtml" />
+    <Content Include="index.html" />
+    <Content Include="sessions\index.html" />
+    <Content Include="venue\index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
