@@ -1,0 +1,1778 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<title>Pittsburgh TechFest : Sessions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<!-- DEFAULT TEMPLATE FONTS DO NOT REMOVE -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+<!-- MAIN CSS LIBRARIES -->
+<link href="../content/css/reset.css" rel="stylesheet" type="text/css" />
+<link href="../content/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="../content/css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+<link href="../content/css/font-awesome.css" rel="stylesheet" type="text/css" />
+<link href="../content/css/owl.carousel.css" rel="stylesheet" type="text/css" />
+<link href="../content/css/owl.theme.css" rel="stylesheet" type="text/css" />
+<link href="../content/css/YTPlayer.css" rel="stylesheet" type="text/css" />
+<link href="../content/css/animate.css" rel="stylesheet" type="text/css" />
+
+<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+<link rel="stylesheet" type="text/css" href="../content/rs-plugin/css/settings.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="../content/rs-plugin/css/extralayers.css" media="screen" />
+
+<!-- MAIN STYLES FOR THE TEMPLATE -->
+<link href="../content/css/style.css" rel="stylesheet" type="text/css" />
+<style>
+.sessions {text-align:left; padding:0 30px;}
+</style>
+</head>
+
+<body>
+<div id="top"></div>
+
+
+<!-- *** HEADER STARTS *** -->
+<header class="transparent_menu small">
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+
+				<!-- *** LOGOS STARTS *** -->
+				<div id="logo">
+					<a href="#top"><img src="../images/logo.png" alt="logo"></a>
+				</div>
+				<div id="logo_dark">
+					<a href="#top"><img src="../images/logo_dark.png" alt="logo"></a>
+				</div> 
+				<!-- *** LOGOS END *** -->
+
+				<ul class="mobile_nav_trigger">
+						<li><a href="#responsive_nav" class="menu_trigger"><i class="fa fa-bars fa-2x"></i></a></li>
+				</ul>
+
+					<div class="social_nav">
+					<ul>
+						<li class="twitter_header_icon"><a href="#twitter"><i class="fa fa-twitter fa-2x"></i></a></li>
+						<li class="facebook_header_icon"><a href="#facebook"><i class="fa fa-facebook fa-2x"></i></a></li>
+					</ul>
+				</div>
+				
+				<!-- *** MAIN NAVIGATION STARTS *** -->
+				<nav class="main_nav white">
+					<ul>
+						<li><a href="../sessions">Sessions</a></li>
+						<li><a href="../sponsors">Sponsors</a></li>
+						<li><a href="../speakers">Speakers</a></li>
+						<li><a href="../venue">Venue</a></li>
+						<li><a href="http://blog.pghtechfest.com/">Blog</a></li>
+						<li><a href="../contact">Contact</a></li>
+						<li><a href="http://www.eventbrite.com/e/pittsburgh-techfest-2014-tickets-11450315201" class="external">Register <span class="label label-danger">Open</span></a></li>
+					</ul>
+				</nav>
+				<!-- *** MAIN NAVIGATION END *** -->
+
+			</div><!--col-me-12-->
+		</div><!--row-->
+	</div><!--container-fluid-->
+
+
+<!-- *** RESPONSIVE NAV START *** -->
+	<div class="responsive_nav">
+		<div class="mobileAreaMenu">
+			<ul>
+				<li><a href="../sessions">Sessions</a></li>
+				<li><a href="../sponsors">Sponsors</a></li>
+				<li><a href="../speakers">Speakers</a></li>
+				<li><a href="../venue">Venue</a></li>
+				<li><a href="http://blog.pghtechfest.com/">Blog</a></li>
+				<li><a href="../contact">Contact</a></li>
+				<li><a href="http://www.eventbrite.com/e/pittsburgh-techfest-2014-tickets-11450315201" class="external">Register <span class="label label-danger">Open</span></a></li>
+			</ul>
+		</div><!--mobileAreaMenu-->
+	</div><!--responsive_nav-->
+<!-- *** RESPONSIVE NAV END *** -->
+
+</header>
+<!-- *** HEADER END *** -->
+
+
+
+<!-- *** WELCOME STARTS *** -->
+<div id="welcome">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="heading">Sessions</h2>				
+				
+				<div class="sessions">
+
+
+								<div class="jquery-sticky-placeholder" style="opacity: 0; height: 94px;"></div>
+				<!-- new stuff -->
+				 	      <a id="modal_trigger" href="#favModal" data-bind="if: currentUser() === window.defaultLoginText">Login to view or save Favorites</a>
+					      <!-- ko if: currentUser() !== window.defaultLoginText --><!-- /ko -->
+
+								<div id="sortable_sessions">
+					        <a id="top" name="top"></a>
+
+					        <!-- ko foreach: timeSlots -->
+					        <div class="timeslot" data-bind="attr: {id: html_id}" id="830900time_slot">
+					          <div class="jquery-sticky-placeholder" style="opacity: 0; height: 102px;"></div>
+
+					          <!-- ko foreach: sessions -->
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Experience</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">13</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Dustin Updyke</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-58">
+					            <p data-bind="html: presenters_bio_formatted">Dustin Updyke is Innovative Projects Engineer at Mylan Pharmaceuticals and has been involved in many different roles within software development since 1997. Working in early stage startups for the majority of his career, he's had experience in a wide variety of technologies and industries.
+
+				Currently he is championing user experience, writing code, and evaluating next generation capabilities and technologies at a global scale within Mylan.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://updyke.com/" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank">updyke.com/</a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/dustinupdyke">http://twitter.com/dustinupdyke</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">After almost 20 years in building software, I came to have “engineer” in my title for the first time, and I wondered at the significance of this. When you think of traditionally “well-engineered” things, their entire experience, from start to finish, is controlled.<br>
+				 <br>
+				After focusing primarily on the fundamentals of “good” software development (Craftsmanship, TDD, Agile, etc.) throughout my career, I now thought that it was time to step back and look at building something with a holistic viewpoint.<br>
+				 <br>
+				If you think of all the great customer experiences, from cars to retail to software, they are all engineered from one point of view on the outside: a person.<br>
+				 <br>
+				How does this car drive? What kind of people buy this car? What kind of maintenance should we expect? Where do we go for help when there is a problem? These facets of a product are engineered towards a single perception, but they don’t get there by a magical P.R. machine alone.<br>
+				 <br>
+				So while code quality, tests and being agile all matter, let’s step out to the macro level and talk about the little things that can make or break a great project. Let’s think of things that matter to a user, to a build team, and to the stakeholders in the business themselves, and let’s make sure their experience is exceptional.<br>
+				 <br>
+				At the end of the day, whether its setting expectations about delivery times, advocating a certain technology be used by the development team or the simple act of controlling input on a Web form, it all boils down to getting a desired output from different inputs - it’s all about engineering a personal experience.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">Main Room</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+					          <!-- /ko -->
+					        </div>
+
+					        <div class="timeslot" data-bind="attr: {id: html_id}" id="9151015time_slot">
+					          <div class="jquery-sticky-placeholder" style="opacity: 0; height: 102px;"></div>
+
+					          <!-- ko foreach: sessions -->
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Building a Better Development Shop</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Business/Soft Skills</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Eric Wise</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-22">
+					            <p data-bind="html: presenters_bio_formatted">I am the President and founder of the Software Craftsmanship Guild in Akron, OH.
+
+				At the Software Craftsmanship Guild our cohorts allow apprentices to experience the practical application behind taking a modern application from start to finish under the guidance of mentors. Throughout the process they not only receive feedback from the mentorship staff, but also the regional community at large due to the Guild’s relationship with individuals working in the field who volunteer their time to the cohort. All of this serves not only to set a quality standard for their careers, but also accelerate their learning.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/SWCGuild">http://twitter.com/SWCGuild</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">In a world where “every company is becoming a software company”, building and managing a software development team that can consistently deliver value is a key concern for hiring managers and executives. In this presentation we cover the key qualities of good software, discuss research showing why hiring great developers pays big dividends, explore why your hiring process sucks, and cover common traits of high performing teams, and more importantly things in your environment that drive great developers away.<br>
+				<br>
+				Bonus: Most of the recommendations are inexpensive!</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">317</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Continuous Deployments with Octopus Deploy</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">DevOps</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Adrian Wright</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-2">
+					            <p data-bind="html: presenters_bio_formatted">Adrian Wright is a software architect with 9 years experience, currently working as a consultant for Summa.  He has worked in a variety of industry verticles, mostly in the .NET stack.  His experience with complex distributed systems was the inspiration for designing repeatable, auditable deployments.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/http://blog.spock.com">http://twitter.com/http://blog.spock.com</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Tired of crossing your fingers and hoping your production deployment works like a charm?  Join us for a discussion of automating your deployments with Octopus Deploy.<br>
+				<br>
+				I'll demonstrate how to create repeatable, auditable deployments for your .NET web apps, windows services, and database changes, allowing your team to release more frequently and with greater confidence.<br>
+				<br>
+				As time allows I'll also discuss these optional scenarios that may be applicable for your team:<br>
+				* Web farm deployments<br>
+				* Automated rollbacks<br>
+				* Manual intervention / approval workflow<br>
+				* Deployments from multiple branches<br>
+				* CI integration<br>
+				* Deployments gated by automated tests<br>
+				<br>
+				I'll share my personal experience with implementation/adoption and scenarios where Octopus is not a good fit.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">311</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Effective Data Visualization</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Business/Soft Skills</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">David Giard</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-17">
+					            <p data-bind="html: presenters_bio_formatted">David Giard is a former accountant and a former biochemist, who has been developing solutions using Microsoft technologies for over 2 decades.  Currently, David helps people build solutions in his role as a Microsoft Technical Evangelist. David has been very active in the developer community, speaking at numerous major conferences, code camps, and user groups; helping to lead user groups; and helping to organize conferences and other geek events. He is the host and producer of the mildly popular online TV show Technology and Friends. He is the co-author of the Wrox book Real World .NET, C#, and Silverlight. You can read his latest thoughts at www.DavidGiard.com.  His hobbies include video, photography, sports, and embarrassing his sons.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/DavidGiard">http://twitter.com/DavidGiard</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">We spend much of our time collecting and analyzing data. That data is only useful if it can be displayed in a meaningful, understandable way.<br>
+				Yale professor Edward Tufte presented many ideas on how to effectively present data to an audience or end user.<br>
+				In this session, I will explain some of Tufte's most important guidelines about data visualization and how you can apply those guidelines to your own data. You will learn what to include, what to remove, and what to avoid in your charts, graphs, maps and other images that represent data.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">Ryan</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Hello, Management World!</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">2</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Chris Brack</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-60">
+					            <p data-bind="html: presenters_bio_formatted">I'm a Lead Engineer at Branding Brand managing a team of backend, frontend, iOS, and Android developers with an agile methodology. Throughout my career I've founded a company, developed as an independent contractor, and joined multiple Pittsburgh startups at the ground level. I like long walks on short beaches, oxford commas, and my favorite color is #445566.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/chrisbrack">http://twitter.com/chrisbrack</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">At some point during most software careers, opportunities often arise to choose between development or management. After ten years of development and entrepreneuring, I decided to pursue technical management.<br>
+				<br>
+				This session is aimed toward both developers and managers looking for insight into each other's perspective.<br>
+				<br>
+				Talking points:<br>
+				<br>
+				- Transitioning from development to management<br>
+				- Improving technical communication across platforms and teams<br>
+				- How and why ownership is important for high quality deliverables <br>
+				- What a developer should know about working with technical &amp; non-technical managers<br>
+				- What a manager should know about working with developers<br>
+				- Q&amp;A</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">316</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Intro to Scala</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Functional Languages</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Justin Pihony</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-42">
+					            <p data-bind="html: presenters_bio_formatted">I am a self-proclaimed software journeyman who loves all things coding. But, learning in general is my true passion, and I will pass that passion on to anybody who will listen :).
+
+				My main job is as a developer working with C# .NET, however I am also a recent Pluralsight author working on a beginner's Scala course. On top of those jobs, I currently organize the Pittsburgh Scala Meetup and Pittsburgh Nerd Lunch.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/JustinPihony">http://twitter.com/JustinPihony</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Have you heard the buzz about the power of functional languages, but thought you needed a math degree to understand them? Maybe you tried out Coursera's functional programming in Scala class, but didnt have the time to keep up with it.<br>
+				<br>
+				This session will show you just how easy it is to dive into Scala, a JVM based multi-paradigm language. I will teach you about the power and expressiveness that is provided by Scala while creating a simple console application that you can take home and expand upon for your further learning. The goal of this session is to show you just enough to be productive and whet your appetite to dive deep into Scala!</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">310</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Introduction to mobile development using Angularjs</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">JavaScript</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Jason Meckley, Irwin Hurst</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-27">
+					            <p data-bind="html: presenters_bio_formatted">our bios will follow soon</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/irwinhurst">http://twitter.com/irwinhurst</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">In this first session of the day we will introduce you to the Angular framework. Angular brings many server side development patterns to the client side, including MVC, dependency injection,and loose coupling between presentation, data, and logic components. Bring your laptop and get ready to take a hands-on approach to learning mobile development.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">315</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Robots Who Love Ruby</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Systems and Sciences</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Josh Gretz</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-39">
+					            <p data-bind="html: presenters_bio_formatted">As the Director of Engineering at TrueFit, Josh helps lead our talented team of engineers. Since 2003, Josh has brought his passion for solving problems with technology to TrueFit and its clients. He is a passionate enthusiast of cutting edge technologies and has some of the best business chops around. He understands the challenges in getting new tech products to market and works with our clients and our team to develop innovative ways of overcoming them.
+
+				Josh graduated from Grove City College in 2004 with a B.S. in Computer Information Systems and a minor in business. You can still find him around campus, advising students and teaching a class on iOS development as an adjunct professor.
+
+				Giving back to the community is a huge part of Josh’s life. In addition to contributing to open source, Josh has presented talks at conferences like CodeMash, ThatConference, StirTrek and PGH Tech Fest. Josh also makes time to volunteer as an adult leader of his church’s youth group. Whether its wrestling code into submission or helping to shape the bright minds of the future, Josh is committed to leaving the world a little bit better than he found it.
+
+				Josh resides in Cranberry Township with his wife, three sons, and their labradoodle. When he’s not being beguiled by code, you can find him playing basketball, watching any sport known to man (seriously, he stays up late to watch Olympic Handball), or creating some tasty morsel in the kitchen. He is also known to wear shorts in December. You can follow the journey on his blog: CodeStuffWell.com</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/joshgretz">http://twitter.com/joshgretz</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">I have always been fascinated by robots. As a child, I would spend countless hours creating robots with Legos and imagination, trying to create my own Johnny Five or Terminator. As I grew up, I headed more in a software direction, yet always had that robotics bug in the back of my head - but sadly the bar of electrical engineering always required too much time I didn't have. In the past few years though, that barrier has all but disappeared with the creation of platforms like Arduino, Raspberry Pi, and Lego Mindstorms and I have finally started realizing my childhood dreams (although the full Terminator is still in production).<br>
+				<br>
+				At the same time I was getting back into robotics, I was also getting deep into Ruby. And as much as I love rehashing my old college days of hacking C, I wanted to marry these two paths, and thus I went down the path of hacking my bots with Ruby.<br>
+				<br>
+				In this talk, I want to share what I have learned along the way. We will be covering how to use Ruby to program robots across the spectrum. We will start with "pre-fab" robots like Sphero, move onto Lego Mindstorms, and then finally head to the DIY bots built on Arduino and the Raspberry Pi. We'll cover the tools you need, as well as some tips and tricks to get you up and hacking quickly. Finally we will explore how this approach works in some bots I have built.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">313</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">The Good, the Bad and the Ugly: Aligning Product Management with Agile</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Agile/Process</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Stacy Leidwinger</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-55">
+					            <p data-bind="html: presenters_bio_formatted"></p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/">http://twitter.com/</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Agile methodologies have a strong role for the product owner; however, most organizations struggle to identify the differences and similarities of the product owner and the product manager. Questions around the need for both or even need for product management as a practice come up. Product managers should not be hiding in the corner office, but actively engaged daily with development team.<br>
+				<br>
+				In my session, I will introduce best practices on how to leverage product management within agile to build market driven product lines. I will give tips and tricks on what product managers need to do to better align with Agile and how development can better educate product management on their needs. Highlights of session include:<br>
+				<br>
+				    Definition of product managements’ role in the organization<br>
+				<br>
+				    Leveraging a design partner for new product introductions<br>
+				<br>
+				    Demands every development team should be making of product management<br>
+				<br>
+				    Pit falls to avoid in building strong product management and developer relations</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">103</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">The Hipster’s Guide to NLP</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Systems and Sciences</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Chris Umbel</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-10">
+					            <p data-bind="html: presenters_bio_formatted">TBD</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/chrisumbel">http://twitter.com/chrisumbel</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">In computer science natural language problems are amongst the oldest (from far before computer science was cool) and most interesting. The increase in computing power, but more importantly its availability to average people has spurred the application of Natural Language Processing (NLP) behind modern interfaces. In this talk the basic NLP components backing common problems such as sentiment analysis and full-text search will be explored using tools available to typical, modern web developers -- not stuffy university-types. While the code/tools presented will be in python and node.js the underlying algorithms are agnostic to language, even those obscure ones you've probably never hear of.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">308</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+					          <!-- /ko -->
+					        </div>
+
+					        <div class="timeslot" data-bind="attr: {id: html_id}" id="10301100time_slot">
+					          <div class="jquery-sticky-placeholder" style="opacity: 0; height: 102px;"></div>
+
+					          <!-- ko foreach: sessions -->
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">An Introduction to D3.js</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">JavaScript</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Eric B. Werner</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-20">
+					            <p data-bind="html: presenters_bio_formatted">Eric Werner is the Technical Director and Chief Architect for the SEI Emerging Technology Center at Carnegie Mellon University.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/ebwinpgh">http://twitter.com/ebwinpgh</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">D3.js is a popular JavaScript library for creating live data visualizations built on standard web technologies.<br>
+				<br>
+				I will introduce D3.js with basic examples, explain the D3 dataflow, and then demonstrate some advanced graph visualization uses of this toolkit.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">314</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">CANCELED: Single Page Productivity with Ember.js, Ember-CLI and Ember-Admin</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">1</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Brendan O'Hara</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-57">
+					            <p data-bind="html: presenters_bio_formatted">TBD</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/">http://twitter.com/</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Brendan had to cancel for personal reasons.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">310</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Infrastructure as Code</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">DevOps</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Andre Henry</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-3">
+					            <p data-bind="html: presenters_bio_formatted">Technology industry for over 15 years
+				Positions ranging from Software Engineer to Chief Technical Officer
+				Healthcare IT, Enterprise Infrastructure
+				Currently Senior Systems Engineer at Think Through Learning</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/BobTheBotMaker">http://twitter.com/BobTheBotMaker</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">What is infrastructure as code, and how does it relate to DevOps. What are the tools and processes used to implement and manage infrastructure as code and what kind of skills are needed.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">316</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Intro to Xamarin Studio</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Mobile</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Jorge Balderas</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-38">
+					            <p data-bind="html: presenters_bio_formatted">Jorge Balderas is a Distinguished Technical Consultant at Summa. Jorge specializes in enterprise application integration. His areas of interest and experience include: C#, .NET, SOA, Web Services, Mobile Development.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/jorgerbf">http://twitter.com/jorgerbf</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Xamarin Studio is an IDE that allows creating native applications for iOS and Android (among other environments) using C#. This session will be a hands on demo showcasing Xamarin Studio for a creating a simple application for iOS and Android.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">Ryan</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Potential Pitfalls of User Stories</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Agile/Process</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Danielle Verba</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-15">
+					            <p data-bind="html: presenters_bio_formatted">I am a seasoned product manager living in one of the best cities in the world - Pittsburgh!  I am constantly looking for opportunities to challenge myself and those around me. I have 6+ years experience managing software development teams utilizing Agile methodologies, and I have a passion for leadership and improving business processes.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/">http://twitter.com/</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">- Common misconceptions regarding user stories, and the different types of user stories<br>
+				- Traditional conventions for user story structure, and why they're unnecessary<br>
+				- Alternatives to user stories that are more efficient for working with development teams as well as stakeholders<br>
+				- Times when user stories can actually be beneficial<br>
+				- If you still want to utilize user stories, tips on how to set the project up for success</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">313</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Secure Software Development Best Practice</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Security</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">David C. Brown, PMP, CISSP, CIP</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-16">
+					            <p data-bind="html: presenters_bio_formatted">David Brown is the founder of Business Complete Solutions, a consulting firm that helps companies to transform business analysis, Information Security, and compliance expertise into exceptional business improvement outcomes.
+
+				He has more than thirty years of programming and project management experience in R&amp;D, and manufacturing operations for Fortune 50 companies. He is also an expert security researcher.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/">http://twitter.com/</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Secure software development needs more than great programming. Secure software development also requires a solid development architecture. This includes appropriate policies, practices, tools and controls. This session will discuss some of the elements required to build that architecture. It will be language and platform independent so that it is applicable across all software development projects.<br>
+				<br>
+				The intended audience includes development managers, application architects, designers, and developers.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">317</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Testing Agility - An agile look at the role of the modern test engineer</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Testing</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Jared Bill</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-32">
+					            <p data-bind="html: presenters_bio_formatted">Graduated in 2006 with a Bachelors of Science in Computer Engineering.
+
+				Twitter Description:  Jack of many trades, passionate about: software, agile, music, physics, science, logic, psychology, magic(NOT the gathering), technology, tinkering, math, pool, gaming, freedom.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/JaredBill">http://twitter.com/JaredBill</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">This a talk which outlines the changes in recent times around the interactions of a test engineer in an agile environment.  It talks about collocation, fundamentals of a team and what is expected of the test engineer.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">311</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">The buttons they do nothing!  A lesson in pragmatic UX</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Business/Soft Skills</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Nicholas McClay</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-47">
+					            <p data-bind="html: presenters_bio_formatted">I’m currently a full time UX Developer at Forever.com focused on designing and building best-in-class web and mobile experiences. Besides UX I’m also a huge JavaScript enthusiast and serve as the organizer for the Node.js and Angular.js Pittsburgh Meetups.
+
+				I’m an eternal journeyman, always looking for new technologies and insights to build great user experiences.  From web and mobile applications to robotic toys and video games I’ve worked on a wide array of interactive projects in nearly every role imaginable.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/nickmcclay">http://twitter.com/nickmcclay</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">In the fast paced world of software development, products with great user experience are increasingly the deciding factor for where customers decide to spend their time and money.  You don't need to be a designer to make great user experiences in your products.  UX is a discipline, and a methodology, and a mind-set all rolled into one, and anybody can learn how.<br>
+				<br>
+				In this presentation I'm going to give you a starter pack of UX design tools you can use to start building better products immediately.  The fundamentals of building quality user experiences are quite simple to get started, and will serve you well regardless of whether you are a seasoned UX veteran or a just trying to figure out how to make this web page not suck.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">103</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Unretrofittable: start your project off right</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Business/Soft Skills</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Chris Winters</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-11">
+					            <p data-bind="html: presenters_bio_formatted">Chris Winters has been solving problems big and small for 15 years
+				with many different software tools. He's now at ModCloth using
+				primarily Ruby having been "that PittJUG guy" and "that Perl guy" for
+				a long time.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/cwinters">http://twitter.com/cwinters</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Everybody loves starting a greenfield project: the world is wide open and ready for your choices. Which of those choices will hinder change and which will open up possibilities for your business?  This talk will focus on a few of these choices: those that help your users love what you do, those that point your support team to solutions for runtime issues, those that enable your domain experts seamlessly translate their knowledge, and those that get your team up-to-speed quickly.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">308</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+					          <!-- /ko -->
+					        </div>
+
+					        <div class="timeslot" data-bind="attr: {id: html_id}" id="11151215time_slot">
+					          <div class="jquery-sticky-placeholder" style="opacity: 0; height: 102px;"></div>
+
+					          <!-- ko foreach: sessions -->
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">A Noble Product Owner - Who Can Find?</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Agile/Process</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Kim Hardy</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-43">
+					            <p data-bind="html: presenters_bio_formatted">I am not challenging people’s beliefs; rather I am challenging them to express the best in themselves. I call out to their potential, refusing to let them squander their talent. I am brimming with ideas about how to make the process of discovery compelling, invigorating, essential even. While I inspire, I am also often inspired. Excited by newfound ideas, I’ll tell anyone who’ll listen. I can often be heard exclaiming, “Isn’t this the coolest concept you’ve ever heard?!” or “Isn’t that the most brilliant idea?!” I never quite understand why more people are not as thrilled as I am…
+
+				My name is Kim Hardy. I have a BS in Computer Science; a MS in Information Science – Systems Design; and over 20 years of experience as a Programmer, Software Architect, Project Manager and Systems Analyst. I am also a Certified Scrum Master.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/kbatchhardy">http://twitter.com/kbatchhardy</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">What does it take to be a really good product owner. Specifically, what does a product owner have to care about to be truly effective. After introducing concepts related to creating and managing epics, user stories and other backlog items, we will break out into small groups and work through exercises to put this knowledge to work.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">310</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">AngularJS testing strategies</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">JavaScript</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Nathan Peterson</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-46">
+					            <p data-bind="html: presenters_bio_formatted">Nathan Peterson is a developer who is passionate about all things related to software development.  He currently works at Aesynt where he builds inventory management software.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/njpetersonpa">http://twitter.com/njpetersonpa</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">AngularJS has quickly become one of the more popular client-side JavaScript frameworks to use when building a web application.  One of the framework’s strengths is its two-way data-binding that greatly reduces the need for DOM manipulation while increasing testability.<br>
+				<br>
+				In this talk, I’ll discuss testing strategies that you can use when creating your next AngularJS application.  I’ll show how to incorporate unit testing and end-to-end (e2e) testing, the benefits of each approach, and when to choose one over the other.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">316</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Application Security: What you don't know can hurt you</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Security</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Joe Kuemerle</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-36">
+					            <p data-bind="html: presenters_bio_formatted">Joe Kuemerle is a developer and speaker in the Cleveland, OH area specializing in .NET development, security, database and application lifecycle topics.  Joe is active in the technical community as well as a speaker at local, regional and national events.  Joe blogs at www.kuemerle.com and is on Twitter as @jkuemerle.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/jkuemerle">http://twitter.com/jkuemerle</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Writing secure code is not difficult but it does require that you have a good understanding of what is insecure.  In this session we will cover some of the top threats out there that can be used to break your applications.  We will also cover techniques to improve the design of your application to minimize the vulnerabilities and mitigate those you cannot remove.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">103</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Communication Strategies for Remote Teams</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Agile/Process</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Jake Brown</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-31">
+					            <p data-bind="html: presenters_bio_formatted">I'm a local developer in Pittsburgh.  I currently work for FTI Consulting, and have previously worked for Confluence Technologies, a few start-ups, and FreeMarkets.
+
+				I've spent most of my time working with the Microsoft stack, sometimes on products that were traditional web,  some on installed software, and some distributed cloud-based products.  Recently, I've jumped in the deep end of the pool on being a javascript developer.
+
+				I've been on many teams with remote workers, and I led a team spread over a large geographic area.  I helped hire most of the people, and over time learned that almost everyone has a valuable niche they can fill, if you give them time (not all that much) and work with them to find it.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/BrownB42">http://twitter.com/BrownB42</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">I've seen a lot of different approaches over the years of organizations trying to operate with distributed teams.<br>
+				<br>
+				I'll talk about how different choices of the ways that you and your teams communicate will yield different types of organizations.  I don't plan on advocating particular products, but there will be a significant amount of discussion about particular tool types, such as video conferencing, chat clients, screen-sharing, presentations, as well as where the traditional tools fit into place.<br>
+				<br>
+				I'll also talk about case studies from my experiences in how using better tools and protocols drastically affected the successes I've had with distributed teams.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">Ryan</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">From 0 to Hadoop</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Data</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Craig Purnell</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-13">
+					            <p data-bind="html: presenters_bio_formatted">Craig Purnell is a Career Database Professional, Community Activist, and Microsoft Certified Trainer. He has been in IT for 15 years and has spent his entire career working with enterprise databases and ERP systems. Craig is an active member of the Ohio North SQL Server User Group and has presented at many user groups, SQL Saturdays, and the PASS Summit in 2012 and 2013.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/CraigPurnell">http://twitter.com/CraigPurnell</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Heard about BigData and Hadoop and want to make some sense of it? You will learn about what Hadoop is and what is it not, and how it can help your organization. We will cover Microsoft HDInsight as a cloud solution and Hortonworks HDP 2.0 as an onsite platform for Hadoop implementations. Takeaways include why you might want to consider onsite vs hosted, and how to get up to speed as fast as possible on this game changing technology.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">314</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Functional Web Development with Haskell</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Functional Languages</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Bill Laboon</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-6">
+					            <p data-bind="html: presenters_bio_formatted">Bill Laboon is currently a senior software developer at Think Through Math, as well as an adjunct faculty member at the University of Pittsburgh, in the Computer Science and Information Science departments.  Previously, he was a consultant at FP Complete, a company dedicated to the commercialization of Haskell.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/BillLaboon">http://twitter.com/BillLaboon</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Functional programming has long been seen as an "academic" discipline, but its power can now be used for more day-to-day tasks such as web development.  By using the Yesod web framework and Haskell, you can easily create more secure, performant, and scalable systems.  Even better, you can catch bugs at compile time instead of run time.<br>
+				<br>
+				This talk will discuss the basics of Haskell syntax, and demonstrate setting up a simple web app with Yesod.  No prior knowledge of Haskell or functional programming is assumed.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">308</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Inside Azure Diagnostics</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Distributed Systems</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Michael Collier</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-45">
+					            <p data-bind="html: presenters_bio_formatted">Michael Collier serves as a Principal Cloud Architect for Aditi, a Microsoft NSI partner that focuses on cloud computing. He is honored to be one of the first Windows Azure MVPs awarded by Microsoft and is a 2012 Windows Azure MVP of the Year for his extraordinary community contributions.  Michael has had a successful 12-year career at various consulting and technology firms where he was instrumental in leading and developing solutions for a wide range of clients. He has a vast amount of experience in helping companies determine the best strategy for adopting cloud computing, and providing the insight, and hands-on experience to ensure they’re successful. Michael is also a respected technology community leader, and can often be found sharing his Azure insights and experiences at regional and national conferences.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/MichaelCollier">http://twitter.com/MichaelCollier</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">We don’t know what we don’t know.  One of the most important factors in successful Microsoft Azure solutions is a well-conceived plan for application insights. In this session we will pull back the covers on Azure diagnostics.  We will take a look at how the diagnostics agent works, and how to best configure it to get the data we need.  We will also explore techniques for monitoring our Azure applications in production.  With the proper application instrumentation and telemetry we can gain invaluable data for troubleshooting, and preventing, problems with our solutions hosted in Azure</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">317</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Making Agile work with Outsourcing</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Agile/Process</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Richard Ashkettle</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-52">
+					            <p data-bind="html: presenters_bio_formatted">My name is Richard Ashkettle.  I am a Technical Architect at TeleTracking Technologies here in Pittsburgh, and have spent the past few years working on and leading Agile projects where at least 50% of my team is located in India.
+				When not working, I lead the local JavaScript meetup.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/idiotcoder">http://twitter.com/idiotcoder</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Have you tried making Agile work with teams where members are in remote locations?  How about when half or more of your team are on another continent?<br>
+				I've spent the past couple of years doing so and have learned what works, what doesn't and how to make it actually quite beneficial.<br>
+				This is from the perspective of a team member or lead, not from a management perspective.  I will provide real-world solutions, what I've found to work best, and do my best to answer any questions you bring along.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">Ryan</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Review of UI choices for mobile development</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">JavaScript</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Irwin Hurst, Jason Meckley</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-28">
+					            <p data-bind="html: presenters_bio_formatted">our bios will follow soon</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/irwinhurst">http://twitter.com/irwinhurst</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Even though a hybrid app can run on multiple platforms it is important to consider how your app will look and feel on each device. Bring your laptop and get ready to take a hands-on approach to learning mobile development.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">315</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">SignalR-powered Real-Time Apps!</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Systems and Sciences</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Samidip Basu</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-53">
+					            <p data-bind="html: presenters_bio_formatted">Samidip Basu (@samidip) is a technologist, Apress/Pluralsight author, speaker, Microsoft MVP, believer in software craftsmanship, gadget-lover and Developer Advocate for Telerik. With a long developer background, he now spends much of my time advocating modern web/mobile/cloud development platforms on Microsoft/Telerik stacks. He passionately helps run The Windows Developer User Group (http://thewindowsdeveloperusergroup.com/), labors in M3 Conf (http://m3conf.com/) organization, serves as INETA Secretary (http://www.ineta.org/) and can be found with at-least a couple of hobbyist projects at any time. His spare times call for travel and culinary adventures with the wife. Find out more at http://samidipbasu.com.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/samidip">http://twitter.com/samidip</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">SignalR is a very cool piece of technology in the One ASP.NET stack that provides asynchronous signaling libraries for building real-time, multi-user interactive applications connecting disparate systems. We start slow by understanding the need for real-time apps &amp; existing technologies, before unpacking SignalR in all it's glory. We take a look at SignalR usage in building real-time connected web applications, before turning to client mobile apps. Windows Phone, Windows 8, HTML5, iOS &amp; Android - all join the fun. Locations apps, Mapping, Chat, Live Game Scores, Object syncs - you name it, we got you covered with real-time apps! Come join us as we explore some of these new real-time opportunities through demos &amp; code samples.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">313</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">The Internet of Things is Here, but Don't be Scared</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Systems and Sciences</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Hans Scharler</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-26">
+					            <p data-bind="html: presenters_bio_formatted">Hans Scharler is a co-founder of ioBridge and creator of ThingSpeak. He loves connected gadgets and builds connected things such as @MyToaster and CheerLights.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/Scharler">http://twitter.com/Scharler</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Have you heard about the Internet of Things? There is so much hype about IoT, but it is way more than hype - it is here and real. Developers interested in mobile and Web technologies need to know how to be a part of it and businesses need to know how to leverage it.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">311</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+					          <!-- /ko -->
+					        </div>
+
+					        <div class="timeslot" data-bind="attr: {id: html_id}" id="115145time_slot">
+					          <div class="jquery-sticky-placeholder" style="opacity: 0; height: 102px;"></div>
+
+					          <!-- ko foreach: sessions -->
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Agile People</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Agile/Process</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Jay Anderson</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-33">
+					            <p data-bind="html: presenters_bio_formatted">Jay Anderson is Director of Product Development for DDI. Jay has been using Agile development techniques for ten years—predominantly Scrum/XP/Lean. Previous to discovering Scrum, Jay was involved with lean manufacturing and the conversion of processes in the building of locomotives. He has been an Agile coach for multiple organizations and companies. Jay has implemented complex software intensive systems in the power industry, the transportation industry and the talent management industry. Jay has an MSEE from the University of Pittsburgh.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/">http://twitter.com/</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Even though DDI is in the business of talent management and leadership development, we—like most organizations—struggled to make the transition to Agile from Waterfall. It took us two years of often slow, inconsistent and unpredictable development cycles to realize that our teams weren’t fully empowered to make decisions and didn’t feel responsible for the outcomes.<br>
+				So despite sound product strategy, quality people and strong technical training, our success in transitioning to Agile all hinged on one thing: adapting our people processes to drive a culture of empowerment within both our leaders and teams within the new Agile environment.<br>
+				Come learn how DDI improved software development speed, quality, predictability and sustainability by:<br>
+				• Altering our existing team member and formal/informal leadership competency models to better reflect Agile principles.<br>
+				• Determining how to best place people in the teams and roles that would ensure their and the organizations’ success.<br>
+				<br>
+				• Adapting our hiring and development processes to bring in and grow people more capable of driving a culture of trust and accountability.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">Ryan</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Android Tips and Tricks</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Mobile</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Handerson Gomes</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-25">
+					            <p data-bind="html: presenters_bio_formatted">I'm a Distinguished Technical Consultant with more than 13 years of experience in software development in large and medium corporations using a diverse set technologies and methodologies.
+				For the past year I have worked on server side technologies and Android development.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/handersongomes">http://twitter.com/handersongomes</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Would you like to start developing for Android? Have you started with Android development and stumble in issues? Are you seasoned developer and would like to share your experience?<br>
+				<br>
+				Well, in this session I'll share the lessons I learned through developing a Native Android App. I'll cover development environment, frameworks, patterns, gotchas and everything that I learned after a year of frustration and achievements while developing for Android.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">313</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Dealing with the demands of the open source community</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Business/Soft Skills</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Seth Vargo</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-54">
+					            <p data-bind="html: presenters_bio_formatted">Seth has been a Ruby developer for more than 5 years. He as written several popular open source Ruby projects such as bootstrap_forms and powify. He is also very involved in the Chef community, contributing to Chef core and writing/maintaining open source tools like Berkshelf, fauxhai, ChefSpec, Strainer, and more. Seth maintains a variety of popular community cookbooks and regularly hangs out in IRC, Twitter, and GitHub.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/sethvargo">http://twitter.com/sethvargo</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">"Our open source customers are by far the worst" - Mathias "Bacon" Meyer (Travis CI)<br>
+				<br>
+				They don't pay us money. They don't understand the goals of the project. They don't even say "thank you". But studies and personal experiences have proven that users of open source software are _more_ demanding than those same users who pay for software. Why?<br>
+				<br>
+				Understanding the "why" will help us discover the "how". How can we solve this problem? Because it's not a technical one - it's a cultural one.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">314</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Don't Forget the User! Igniting Interaction</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Business/Soft Skills</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Foo Conner</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-23">
+					            <p data-bind="html: presenters_bio_formatted">Foo is a social media maven that has worked behind nationally recognized brands. He's an avid tweeter with a following over 50k. He also plays an advisory role in several environmental startups.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/iwasaround">http://twitter.com/iwasaround</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Don't Forget the User! Igniting Interaction will be designed around the usability side of the development. A strong emphasis is placed on testing and user metrics over assumptions. Don't Forget the User will highlight simple tricks and tips to help developers no matter where they are in the design process. Finally, the lecture will highlight how good design leads to incredible branding such as in the case of Apple and Nest.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">316</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Introduction to safe and secure coding methods</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Security</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Julien Delange</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-41">
+					            <p data-bind="html: presenters_bio_formatted">Julien Delange is a software engineer working at the Carnegie Mellon Software Engineering Institute (SEI). Before living in Pittsburgh and running across bridges over his week-ends, he lived in The Netherlands, worked in the European Space Agency and was in charge of many software project in the aerospace domain. He got his PhD in Computer Science at University Paris 6 and TELECOM Paris and developed POK, an operating system for embedded system dedicated to safety and security that has been used in safety industry and academic project. He also got a Mast Degree in Computer Science in University Paris 6 in Embedded Systems. He is a computer-science addict since a very long time and has also a strong experience with Open Source Software (he was a previous Debian developer) and involvement with the community (previous Summer of Code projects, involvement in mentoring, etc.). You can check out his homepage on http://julien.gunnm.org.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/">http://twitter.com/</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Coding standards for safety and security. Many languages have non-deterministic constructs and notations that may lead to unsafe and unsecure code. The talk will present some well-known safety or security errors/issues caused by syntax or semantics code errors. Then, we will present existing approaches and standards to tackle such issues and how to practically use them (with static analysis tools, compiler options, etc.) in order to improve quality of your code.<br>
+				<br>
+				The talk will try to maintain a relation with existing code and projects to show the impact of a code defect in terms of security (e.g. the iPhone goto error) or safety (e.g. Ariane 5 rocket that exploded at launch)</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">311</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Killing the Monolithic Beast</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Distributed Systems</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Chris Houdeshell</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-9">
+					            <p data-bind="html: presenters_bio_formatted">Hello, my name is Chris Houdeshell and I am a software craftsmen. I grew up in State College, PA – close to Penn State University. I still call this place home with my wife and daughter (plus some other critters we call pets).
+
+				During the day, I conjure up software for an energy management company. I perform tasks with sleight of hand and illusion to all layers of the stack. During the night, you can find me tinkering with software and hardware.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/choudeshell">http://twitter.com/choudeshell</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">SOA and Microservices are more than just buzz-words-of-the-month. These concepts are the weapons used in killing monolithic beasts and turning them into a decentralized &amp; connected application. This talk will focus on using web services &amp; APIs to break an application into smaller, more easily managed pieces, noting all the pitfalls and problems along the way.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">308</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">TDD in Golang</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">OO Languages</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Adam Kalnas</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-1">
+					            <p data-bind="html: presenters_bio_formatted">Adam is a software developer at ModCloth.com.  He is aspiring to be a well versed polyglot, striving to become proficient in whatever language solves the job best.  He’s been into C#, .NET, hardware, and robotics for 7 years, and over the past year made the jump to web development in Ruby and Go.  He’s blogging about the humbling experiences of starting fresh in a new technology space at http://akrubynewbie.blogspot.com/  He's passionate about crafting stable, uncomplex code with a high degree of automated test coverage. He enjoys eliminating or automating painful processes, and all things agile.
+
+				Adam’s interests and hobbies include disc golfing, computer and board gaming, home brewing of meads and wines, woodworking, camping, and discovering unintended uses for electronics.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/http://blog.whatever.com/">http://twitter.com/http://blog.whatever.com/</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Learning a new programming language is a fun and exciting thing to do.  While exploring all of the nuisances of the language, often time one learns lessons the hard way.  Automated tests provide the safety net that I need in order to feel comfortable while exploring GoLang.  During this talk, I plan on sharing with some foundations and introductory material about GoLang, how to write beautiful automated tests, and teach your techniques to help build your confidence while exploring this and other new languages.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">310</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Using Vagrant to Build A Happy Web Development Environment</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">DevOps</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Nik Mihalick</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-48">
+					            <p data-bind="html: presenters_bio_formatted">Nik has 10 years of experience building software for the web. He is a full stack web developer that has worked in all phases of the development process -- including planning, project management, programming, and client support. Nik blends good software practices with user empathy to deliver well crafted and easy to use products.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/shortpgh">http://twitter.com/shortpgh</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Vagrant makes standing up a local web development environment super simple. All you, as a developer, has to know is to checkout a repo and type “vagrant up” to get your local server built. It creates the server from the config saved in the repo. All of the packages are install and it maps to the your local drive so that you can start hacking in minutes. This eliminate the “it works on my machine” excuse, but it also eliminates the need to manage development servers. Those resources can be reserved for CI and pre-production testing. While this is all great, there is a lot more you can do with that simple “vagrant up” command. You probably have your code modules that need built. Databases to populate. And you’ll need to start your app. Web front-ends are as simple as they used to be, so you’ll also have to run CSS pre-processing, JS bundling, and other front-end build tasks. Tying all of this into “vagrant up” makes starting and working on your app a breeze. I’ll walk through how we setup a node.js app that does just that. I’ll cover the tools we used -- Puppet and Gulp among others -- and how they work in a Vagrant setup. I’ll touch on some common pitfalls in this setup and how it affects our production process.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">103</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">WebGL Practices &amp; Security</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">JavaScript</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Arne Fostvedt</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-4">
+					            <p data-bind="html: presenters_bio_formatted">I really like programming. Prior to moving to Pittsburgh, I worked for microfinance and machine learning startups in the Bay Area and Washington DC respectively. I'm currently employed with CMU as a software engineer. I majored in Philosophy, speak 3 languages and love snowboarding.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/a_rne">http://twitter.com/a_rne</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">This talk will be an overview of the principles of modern web graphics, interactive 3D rendering, the GPU pipeline, Canvas, WebGL, JavaScript APIs (e.g. Three.js) and finally security concerns.<br>
+				<br>
+				Some of the specifics I plan to talk about include the fundamentals of computer graphics such as points, lines, triangles / polygons, the z-buffer and lighting. On a slightly lower level, I would like to walk through some basic WebGL code, as well as the equivalent Three.js implementation. There won't be a live security vuln demo, but I will touch on some of the past vulnerabilities as well as touching briefly on the implications of allowing untrusted code to interact with the GPU.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">317</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+					          <!-- /ko -->
+					        </div>
+
+					        <div class="timeslot" data-bind="attr: {id: html_id}" id="200300time_slot">
+					          <div class="jquery-sticky-placeholder" style="opacity: 0; height: 102px;"></div>
+
+					          <!-- ko foreach: sessions -->
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">A Sip Of Elixir</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Functional Languages</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Onorio Catenacci</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-50">
+					            <p data-bind="html: presenters_bio_formatted">I am a software engineer for Quicken Loans in Detroit, MI with 20+ years of building software for a living.  I have a special interest in functional programming as well as developing highly scalable systems.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/OldDutchCap">http://twitter.com/OldDutchCap</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Elixir is a new language on the Erlang VM which combines the industrial strength of Erlang with the much more friendly syntax of Ruby with some other goodness thrown in.  This session will be a brief introduction to Elixir; how to get it, basic syntax and some of the tooling surrounding it.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">317</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Baked-In Security – Threat Modeling and Threat Mitigation for Protection of PII</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Security</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">David Shepard</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-18">
+					            <p data-bind="html: presenters_bio_formatted">I've made a career working in many different areas of the information technology field. To name a few, I've spent time building networks, administering servers, designing software, writing and debugging software, process improvement initiatives, and auditing application security. There is always something new to learn. I've worked in corporate, education, and government sectors for large institutions, mid-sized companies, and start-ups, on projects ranging in size from the tens of thousands to the tens of millions of dollars in budget. Every one of these experiences teaches you something about who and what type of leader you are, what you are good at, and what you want to do with your professional life. In my time with the SEI, I've spent a lot of time working on research. My career as a researcher was not intentional, but it seems I'm 'OK' at it.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/daveman1010220">http://twitter.com/daveman1010220</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">It seems like every week there is a high-profile data breach that affects the privacy and security of tens of thousands to millions of users. Developers are known for considering security someone else’s problem (IT, the CISO, etc.) This talk will address why YOU the developer, should be concerned with application security. We will cover the basics of threat modeling for a common scenario: protecting the PII of your users. We will then use this threat model to consider coding techniques for mitigating vulnerabilities before they become a problem. It’s better for everyone if a breach doesn’t result in catastrophic losses. Developers can have a major impact on preventing breaches from having dire consequences.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">316</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Building out the angular mobile app</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">JavaScript</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Irwin Hurst, Jason Meckley</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-29">
+					            <p data-bind="html: presenters_bio_formatted">our bios will follow soon</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/irwinhurst">http://twitter.com/irwinhurst</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">This will be a deep dive into Angular coding.  A combination of live coding and cut/paste. Spending some time on debugging issues is all part of the process.  We will build a simple but complete app with backend services. Bring your laptop and get ready to take a hands-on approach to learning mobile development.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">315</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Implementing an HTML5 FileReader and canvas-based crop with AngularJS</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">JavaScript</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Chad Smith</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-8">
+					            <p data-bind="html: presenters_bio_formatted">Chad Smith lives in Pittsburgh, PA where he manages the front-end development team and is the SCRUM master for a skilled development team. He enjoys learning new things about front-end development and is often found drawing on a white board. In his free time he is a father of two, and plays ice hockey. He loves spending time with his beautiful wife Maria and gets excited for "date night".</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/hppycoder">http://twitter.com/hppycoder</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">This talk will focus on how we redesigned our Flash based custom gift card creation process into an AngularJS application utilizing FileReader and canvas. You will leave knowing how to use AngularJS directives to instantiate the FileReader, convert the photo to a canvas, allow a user to crop the photo with jCrop, and use AngularJS $http service to send the photo to the server. Legacy browser consideration and implementation will be covered for those who need to maintain feature parity.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">311</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Machine Learning for Modern Developers</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Systems and Sciences</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">C. Aaron Cois</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-7">
+					            <p data-bind="html: presenters_bio_formatted">Constantine Aaron Cois received his M.S. and Ph.D. from the University of Pittsburgh for work developing novel systems and algorithms for medical image analysis. His doctoral research involved developing frameworks, algorithms, and data structures to efficiently perform complex statistical calculations on large amounts of data. His background in machine learning and complex systems, combined with a passion for web-based technologies, led him to develop data- and analysis-driven software systems for numerous organizations, including UPMC and Carnegie Mellon University. His current focus is on software architecture, particularly for real-time, distributed, and web-based systems.
+
+				Constantine is also an Adjunct Professor teaching graduate software engineering at Carnegie Mellon University's Heinz College, and a regular speaker at technology conferences.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/aaroncois">http://twitter.com/aaroncois</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Stand back, we’re going to try science!<br>
+				<br>
+				With the rise of Data Science, statistics and Machine Learning have become valued tools in the field of software development. Now, more than ever, a fundamental understanding of Machine Learning and its place in software systems has become necessary for ambitious developers. With my academic research background in applied machine learning and years of industry experience developing large software systems, I strive to bring the power of Machine Learning to software developers everywhere, allowing them to leverage powerful new data-driven features in their projects.<br>
+				<br>
+				In this talk, I’ll walk you through the fundamental concepts, use cases, and tools of machine learning for modern software development. We’ll cover classification, clustering, and other common machine learning techniques, and work with hands-on examples using Scikit-learn, a powerful Python machine learning library with unsurpassed usability. Afraid of advanced math? Fear not! I’ll focus on approachable concepts, tools, and techniques that you can start using today in your own projects.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">308</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Mobile First for Responsive Design</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Mobile</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Benjamin Bykowski</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-5">
+					            <p data-bind="html: presenters_bio_formatted">Ben has more than 17 years’ experience in both technology and information architecture. Prior to creating Falls Digital, Ben led a team of designers, developers, and technology professionals at a Cleveland-based interactive marketing agency. With roots in Ohio, Ben was classically trained in computer science &amp; engineering at the University of Toledo. A life-long learner, Ben earned an MBA from Case Western. Ben is a Microsoft Certified Professional and a member of the Information Architecture Institute and Interaction Design Association. Off the grid, Ben is the married father of three boys and is civically engaged in his local and regional community. He enjoys sailing, snowboarding, traveling, reading, and is a practiced chef and DJ.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/Sirius_B">http://twitter.com/Sirius_B</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Attention Web designers and developers, if you are building your websites with the desktop as your starting place and building a  separate mobile site – You are doing it wrong! Take heart, I am not here to disparage your approach to building websites, just to bring clarity and purpose through an approach that favors common sense over conventional wisdom. We’ll explore how using a content structure map of essential, useful, and peripheral elements helps set a path for a better user experience. We’ll also look at how mobile wire framing and graphic design results in a cleaner, clearer desktop experience and helps avoid the gotchas that plague responsive design work during the build. Bring your own stories and lessons for a spirited discussion. At least one member of the audience will receive a copy of Luke Wroblewski’s Mobile First and templates for content structure maps and mobile wire frames will be shared with all.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">103</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Simplify Your Life with CQRS</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Distributed Systems</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Joel Mason</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-37">
+					            <p data-bind="html: presenters_bio_formatted">I am an aspiring software craftsman currently working in the healthcare arena as a Technical Lead at Aesynt. I also have had the opportunity to teach Software Engineering at Geneva College for the past several years. I embrace agile methods to help bring about high quality software that solves customers’ problems.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/jamason05">http://twitter.com/jamason05</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Command Query Responsibility Separation doesn’t only simplify your code—it simplifies your thought process in all kinds of areas.  In this session we will look through the benefits of CQRS for data persistence, performance, supportability and testing.  We will also look at the way that these concepts allow a team to organize around a design and the clarity that CQRS can help provide.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">313</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">The Hitchhiker's Guide to Windows Azure Mobile Services</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">5</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">David Giard</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-59">
+					            <p data-bind="html: presenters_bio_formatted">David Giard is a former accountant and a former biochemist, who has been developing solutions using Microsoft technologies for over 2 decades.  Currently, David helps people build solutions in his role as a Microsoft Technical Evangelist. David has been very active in the developer community, speaking at numerous major conferences, code camps, and user groups; helping to lead user groups; and helping to organize conferences and other geek events. He is the host and producer of the mildly popular online TV show Technology and Friends. He is the co-author of the Wrox book Real World .NET, C#, and Silverlight. You can read his latest thoughts at www.DavidGiard.com.  His hobbies include video, photography, sports, and embarrassing his sons.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/DavidGiard">http://twitter.com/DavidGiard</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Windows Azure Mobile Services provides a straightforward way to connect your data to multiple applications on multiple devices.<br>
+				In this presentation, I will show how to expose cloud data via a REST interface and connect to that data from applications running on Windows Phone, Windows 8, iOs and Android. You will learn how to secure your data and to send push notification to your client application.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">314</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Validated Learning &amp; Product Development</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Agile/Process</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Nivia Henry</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-49">
+					            <p data-bind="html: presenters_bio_formatted">Technology professional whose motivation is to consistently deliver results through strategic thinking, innovation, servant leadership and continuous improvement.
+
+				Over 10 years of experience utilizing Agile, Scrum, Lean, and Project Management Institute (PMI) methodologies to execute strategy and exceed expectations. Proven ability to manage all stages of Software Development Life Cycle (SDLC). Proficient in internal and external client relationship management.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/lanooba">http://twitter.com/lanooba</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Many of us have heard of - or are using - Lean Startup. One of LS' key principles is validated learning, the process by which one identifies a pain or product gap; develops a hypothesis; and validates it via user research and testing. Using these methods helps form a product/business's lighthouse and enables prioritization of features</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">Ryan</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+					          <!-- /ko -->
+					        </div>
+
+					        <div class="timeslot" data-bind="attr: {id: html_id}" id="315415time_slot">
+					          <div class="jquery-sticky-placeholder" style="opacity: 0; height: 102px;"></div>
+
+					          <!-- ko foreach: sessions -->
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">A performance-theatrical exploration of type-directed, test-driven development, using FizzBuzz</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">6</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Franklin Chen</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-24">
+					            <p data-bind="html: presenters_bio_formatted">I have been professionally developing software for over two decades. In the past, I have done most of my serious programming in C/C++, OCaml, Perl, Java, and some Python and Ruby, but in the past year, I have switched almost entirely to Scala.
+
+				I enjoy playing and teaching chess, playing music (recorder, flute, ukulele, piano), cooking, running, and hiking and dancing with my wife Abby.
+
+				And I like to write.
+
+				personal website/blog: http://FranklinChen.com/
+				programming blog: http://ConscientiousProgrammer.com/
+				chess instruction blog: http://ChessImprover.com/author/FranklinC/</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/FranklinChen">http://twitter.com/FranklinChen</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">An expressive static type system is one of the most joyful and powerful tools for prototyping, designing, and maintaining programs. In this performance-theatrical presentation, I will provide a taste of how to use types, in conjunction with tests, to drive iterative development of a particular program, the famous FizzBuzz problem. We will solve generalizations of this problem, changing and adding requirements, to illustrate the pleasures and benefits of "type thinking".<br>
+				<br>
+				The Scala language will be used the vehicle for this demonstration, but the techniques apply immediately to any industrial-strength statically typed language, such as Haskell, OCaml, F#, Rust.<br>
+				<br>
+				(Note: this presentation will use live human volunteers to play the roles of various programming concepts.)</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">308</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Beyond Requirements Dictator: How Agile Helped a Business Analyst Discover Her Real Value</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Agile/Process</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Diane Zajac-Woodie</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-19">
+					            <p data-bind="html: presenters_bio_formatted">Diane Zajac-Woodie (@agilesquirrel) has spent the last six years redefining the role of the Business Analyst as more than a requirements dictator. Through open and honest conversations, she guides her business partners toward creative solutions that actually solve problems and eliminate waste.  She shares this same approach with her technical teams, facilitating communication, cooperation and continuous learning to ensure success. Diane craves knowledge almost as much as chocolate and could make question-asking an Olympic sport. Her recent passion is to free those that are mired in the status quo even if she has to pull them out one at a time. Her alter ego makes her thoughts transparent on her blog, http://agilesquirrel.blogspot.com/.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/AgileSquirrel">http://twitter.com/AgileSquirrel</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">As companies introduce agile practices, the Business Analyst role is often left by the wayside. The title does not even exist in Scrum or other specific agile implementations, leaving many Business Analysts wondering where they fit in. But fear not! The skills of a good BA are even more valuable in an agile environment! Diane Zajac-Woodie tells the tale of a new agile team, struggling with no formal training, a resistant corporate culture and unwilling team members. She shares how this team benefited from the communication, collaboration and facilitation skills of an experienced BA.<br>
+				<br>
+				She goes on to highlight some specific shifts that Business Analysts can make in order to help their own team’s transition. These include using story maps and writing executable requirements, just in time. Embracing their new roles, BAs can also encourage team members to cross role boundaries. This leads to new skill acquisition and a more cohesive team, which ultimately leads to higher quality software.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">314</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Compiling to native Code/ Deploying Code</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">JavaScript</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Irwin Hurst, Jason Meckley</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-30">
+					            <p data-bind="html: presenters_bio_formatted">our bios will follow soon</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/irwinhurst">http://twitter.com/irwinhurst</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">This session will focus on turning our mobile site into a full hybrid application. It will start with the source code we have been developing which will also be available to download before the session. The end goal is to deploy a fully working mobile application. Bring your laptop and get ready to take a hands-on approach to learning mobile development.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">315</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Creative Tinkering</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Business/Soft Skills</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Josh Sager</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-40">
+					            <p data-bind="html: presenters_bio_formatted">Josh Sager is a Web Developer in Pittsburgh Pennsylvania. He fills his days slinging code as the Development Manager at Smith Brothers and his nights tinkering with Arduinos, programming Raspberry PI's, and screen printing posters. His passion for learning has fueled a career in technology where his experiments have helped to define a diverse career path.
+
+				A path in which Josh has been a designer, a developer, a teacher, a manager, a director and a founder - but nothing can compare to his new role as father. Always game to talk shop, Josh has lead workshops, presentations, and lectures on programming and design for teens as well as working professionals all across the country. You can follow him on twitter @joshsager.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/joshsager">http://twitter.com/joshsager</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Passion projects both at work and in my spare time have created opportunities that have helped me advance my career, advance as a developer and advance within the development community. This talk is about a creative tinkering process that can help other developers do the same thing. It celebrates play at work and creating your next position instead of waiting for it to open up.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">316</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Developing Great APIs</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">OO Languages</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Eric Stein</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-21">
+					            <p data-bind="html: presenters_bio_formatted">Eric is a detail-oriented software engineer who loves building systems that Just Work. He believes that software should be intuitive and easy to use. He currently runs Fulminatus Consulting, a small shop focused on the design and evolution of Application Programming Interfaces.
+
+				Prior to founding Fulminatus Consulting, Eric spent 15 years working for a large variety of firms, from startup companies to multinational corporations to universities. He has worked on internal- and external-facing applications and APIs and has experience in a wide range of sectors, including finance, healthcare, environmental, and networking.
+
+				Eric holds a degree in Mathematics/Computer Science from Carnegie Mellon University.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/">http://twitter.com/</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">I hope to discuss high-level strategies for API design, and will also go into some depth on best practices<br>
+				for implementation. API evolution will be briefly touched on. The primary language covered will be Java, but many concepts will be generally applicable.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">Ryan</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Dr. Strangetest: How I Learned to Stop Worry and Love WebDriver Automated Browser Testing</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Testing</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Stephen Gross</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-56">
+					            <p data-bind="html: presenters_bio_formatted">I'm a professional software developer with about 14 years of experience, including:
+				* Biostatistical analysis software in C++ at CWRU
+				* Tooling / release management / automated testing in medical devices at St Jude Medical
+				* Automated testing for customer account management at Verifications, Inc.
+				* Testing &amp; release infrastructure work at Google</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/mrstevegross">http://twitter.com/mrstevegross</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">This is basically an introduction to the Wild World of UI automation testing. I will cover:<br>
+				<br>
+				* What the heck is automated browser testing, anyway?<br>
+				* What are all the reasons I should NOT do this kind of testing?<br>
+				* If I can surmount all those reasons, what's a reasonable approach to adopting this kind of testing?<br>
+				<br>
+				My preso will be focused mainly on case studies in my own career. I've done UI automation testing for 3 companies (St Jude Medical, Verifications Inc, and Google). In each company, I've encountered unique challenges and opportunities on this front. There is a lot of excitement and chatter in the industry about UI testing, but very little wisdom or experience. I'm hoping that I can help people figure out IF and HOW to adopt this testing technique.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">311</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Introduction to AngularJS and MVVM</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">7</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Ross Dederer</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-61">
+					            <p data-bind="html: presenters_bio_formatted">As a Software Support Engineer at ComponentOne, a division of GrapeCity, Ross Dederer has spent his entire professional life helping others navigate the complex technology environment.  Ross works closely with clients and developer teams to provide solutions that impact software development experiences.  Traveling to code camps, conferences and meeting with corporate clients, Ross is able to pursue his passion of helping the community grow.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/">http://twitter.com/</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">In this session we will be diving into one of the hottest open-source web application frameworks, AngularJS. Plus, we will cover MVVM implementation for targeted UI development platforms. You’ll gain an understanding of its basic structure and gain knowledge on what approaches to take when developing web applications using the best patterns and approaches.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">310</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Reducing Risk in Agile Projects</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Agile/Process</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Jeremy Jarrell</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-35">
+					            <p data-bind="html: presenters_bio_formatted">Jeremy Jarrell is a professional software developer and scrum master specializing in commercial application development for the private sector.  He is heavily involved in the local developer community, both as a highly rated speaker throughout the East Coast as well as a syndicated author whose articles and videos have appeared on sites such as Simple-Talk.com, DZone.com, Pluralsight.com, and ScrumAlliance.com.
+
+				Jeremy loves to discuss all topics related to either software development or agile methodologies and can be reached by Twitter at @jeremyjarrell or at his website, www.JeremyJarrell.com.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/jeremyjarrell">http://twitter.com/jeremyjarrell</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Kicking off any new software project is scary.  Kicking off an agile software project can be even scarier.<br>
+				<br>
+				In this session, we'll learn a few simple techniques that we can apply regularly throughout an agile project to systematically identify and reduce the risk lurking in each of your stories.  These techniques will dramatically improve your odds of successfully delivering a great product, which translates to not only happier customers but also to a happier team.<br>
+				<br>
+				What's the coolest thing that you'll learn in this session?  You'll learn an easy technique that you can immediately begin using with your own team on Monday to noticeably reduce your risk, regardless of whether you're just kicking off a new project or you have a long term project already in progress.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">317</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Scaling Agile for the Enterprise</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Agile/Process</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Philip Van Sickel</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-51">
+					            <p data-bind="html: presenters_bio_formatted">Sr. Project Manager / Agile Coach at Summa Technologies, PMP, CSM, SAFe SPC, PMI-ACP
+
+				Over 20 years project management experience providing excellent information technology solutions for businesses of all sizes. Agile practitioner for over 9 years.  Presenter for Summa at the PMI Pittsburgh Chapter Project Management Company of the year award.  Have been working with SAFe introducing it to Summa Clients for over a year.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/">http://twitter.com/</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">This has become a major discussion out in the agile blogasphere.  Primarily the discussion has been around the Scaled Agile Framework for Enterprises (SAFe) created by Dean Leffingwell.  This presentation will cover the basics of what the Scaled Agile Framework is and then move into the areas of controversy.  We will look at the structure SAFe introduces to handle the issues of scaling and talk about whether these violate the core principles of agile or not.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">103</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+
+					          <div class="session-item nonfav" data-bind="css: { fav: favorite(), nonfav: !favorite() }">
+					            <div class="ez-checkbox"><input class="fav_check ez-hide" type="checkbox" data-bind="checked: favorite" style="float: left" title="Mark as Favorite"></div>
+					            <h3 data-bind="text: title">Windows Store Apps for JavaScript Developers</h3>
+				 							<p>Track(s): <span class="track-str" data-bind="text: track">Mobile</span></p>
+					            <p><a href="#" data-bind="text: presenters_name, click: showSpeakerInfo">Jeff Belback</a></p>
+
+					            <div class="speaker_info panel" data-bind="attr: {id: speaker_info_id}" style="display: none;" id="session-34">
+					            <p data-bind="html: presenters_bio_formatted">Jeff is a Senior Technical Consultant for Summa. He is a software generalist, and developer coach. He has spent most of his career writing C# web applications. However, more recently, he has developed a deep love for all things JavaScript. He also is developing an appreciation for Python and Ruby. In his spare time, other than spending time with his wife and two sons, he loves all things astronomy, playing with Arduinos and Raspberry Pis, and running.</p>
+					            <p><strong>Blog/Website: </strong><a href="http://" data-bind="text: presenters_blog, attr: {href: blog_url}" target="_blank"></a></p>
+					            <p><strong>Twitter: </strong><a data-bind="text: twitter_url, attr: {href: twitter_url}" target="_blank" href="http://twitter.com/jbelback">http://twitter.com/jbelback</a></p>
+					             </div>
+					            <div class="desc-wrap">
+						            <p data-bind="html: description" class="full_descr">Visual Studio 2013 offers the ability to create Windows Store applications using JavaScript. However, these project types feel more like Windows Form applications built with a JavaScript syntax than true HTML/JavaScript projects. For a JavaScript developer, the templates and examples will feel very foreign. This session will attempt to make JavaScript developers feel more at ease in this paradigm. It will walk you through the lifecycle of the application framework, describe patterns and practices that will allow you to leverage your web development skills, and point out areas where it simply makes sense to use what you are given.</p>
+						            <div class="fade-bottom">
+						            	<a class="more-desc" href="#" data-bind="click: toggleLongDesc">Toggle Description</a>
+						            </div>
+
+					            </div>
+					            <p><strong>Room: </strong><span class="room-num" data-bind="text: room">313</span><!-- <br />
+					              Time: <span class="session_time" data-bind="text: time"></span> --></p>
+					            <hr>
+					          </div>
+					          <!-- /ko -->
+					        </div>
+					        <!-- /ko -->
+					      </div>
+						</div>
+				
+				
+				
+			</div>
+		</div>
+	</div>
+</div>
+<!-- *** WELCOME END *** -->
+
+
+
+
+
+
+<!-- *** FOOTER START *** -->
+<div id="footer">
+	<div class="col_footer">
+		<h2>Logistics</h2>
+
+		<ul class="footer_adress">
+			<li><i class="fa fa-map-marker fa-2x"></i>LaRoche College<br/>
+			June 13, 2015 - 8:00am<br/>
+			<a href="venue.html">Venue Info</a></li>
+		</ul>
+	
+	</div>
+
+	<div class="col_footer middle">
+			<h2>Social</h2>
+
+			<ul class="footer_icon">
+				<li><a href="#"><i class="fa fa-pinterest fa-2x"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>
+			</ul>
+			
+	</div>
+
+	<div class="col_footer">
+		<h2>Contact Us</h2>
+
+		<p>
+			If you have any questions regarding Pittsburgh TechFest, please 
+			contact us at <a href="mailto:pittsburghtechfest@gmail.com">pittsburghtechfest@gmail.com</a>
+		</p>	
+	</div>
+	<div class="clear"></div>
+</div>
+<!-- *** FOOTER END *** -->
+
+
+
+<!-- *** SUBFOOTER START *** -->
+<div id="subfooter">
+<div class="copyright">Copyright 2015. All Right Reserved.</div><div class="clear"></div>
+</div>
+<!-- *** SUBFOOTER END *** -->
+
+
+<!-- SCRTIPS START-->
+
+
+<div class="loading_icon"></div>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../content/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../content/js/jquery.prettyPhoto.js"></script>	
+<script type="text/javascript" src="../content/js/modernizr.custom.js"></script>
+<script type="text/javascript" src="../content/js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="../content/js/retina.js"></script>
+<script type="text/javascript" src="../content/js/jquery.nav.js"></script>
+<script type="text/javascript" src="../content/js/isotope.min.js"></script>
+<script type="text/javascript" src="../content/js/owl.carousel.js"></script>
+<script type="text/javascript" src="../content/js/tweetie.js"></script>
+<script type="text/javascript" src="../content/js/jquery.mb.YTPlayer.js"></script>
+<script type="text/javascript" src="../content/js/waypoints.min.js"></script>
+
+<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+
+<script type="text/javascript" src="../content/rs-plugin/js/jquery.themepunch.tools.min.js"></script>   
+<script type="text/javascript" src="../content/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+
+<script type="text/javascript" src="../content/js/custom.js"></script>
+
+<script type="text/javascript">
+
+	jQuery(document).ready(function() {
+		jQuery(window).scroll(function () {
+		
+	    jQuery('header').addClass('small');
+		});
+	});	//ready
+
+	</script>
+</body>
+</html>

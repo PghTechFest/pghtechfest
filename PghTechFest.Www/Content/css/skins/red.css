@@ -1,0 +1,35 @@
+ #service_tab_triggers ul li.active a, .no-touch .hi-icon-effect-1a .hi-icon:hover, .no-touch .hi-icon-effect-1b .hi-icon:hover, .btn.btn-primary, .label-primary,
+ .accordion i, .trigger i, .the-date-big, #response .submit_post, .tags li:hover, #footer .submit_buttom, .skill .bar, .read_more:hover, 
+ .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, .menu_trigger, .mobileAreaMenu a:hover {
+
+	background-color: #E74C3C;
+}
+
+::selection {background-color: #E74C3C; color: white;}
+
+.btn.btn-primary:hover {background: #C0392B;}
+
+a:hover, .process_icon i, .the-title h1 a:hover, .faq_icons i, .blog-item-home a:hover, a.list-group-item.active > .badge, .nav-pills > .active > a > .badge  {
+	color:#E74C3C;
+}
+
+
+
+.hi-icon-effect-1 .hi-icon:after{
+	box-shadow: 0 0 0 4px #E74C3C;
+}
+
+
+
+
+.read_more.black:hover, .read_more:hover {border: 2px solid #E74C3C;}
+
+.over_about, .blog_title_heading h1 {background-color: rgba(231, 76, 60, 0.9);}
+
+.over {background-color:#E74C3C;}
+
+
+
+.cap_style_2_button {border: 3px solid rgb(231, 76, 60); }
+.cap_style_2_button a:hover { color:#E74C3C;}
+	

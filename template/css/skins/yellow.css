@@ -1,0 +1,36 @@
+ #service_tab_triggers ul li.active a, .no-touch .hi-icon-effect-1a .hi-icon:hover, .no-touch .hi-icon-effect-1b .hi-icon:hover, .btn.btn-primary, .label-primary,
+ .accordion i, .trigger i, .the-date-big, #response .submit_post, .tags li:hover, #footer .submit_buttom, .skill .bar, .read_more:hover, 
+ .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, .menu_trigger, .mobileAreaMenu a:hover {
+
+	background-color: #FFC200;
+}
+
+::selection {background-color: #FFC200; color: white;}
+
+.btn.btn-primary:hover {background: #F39C12;}
+
+a:hover, .process_icon i, .the-title h1 a:hover, .faq_icons i, .blog-item-home a:hover, a.list-group-item.active > .badge, .nav-pills > .active > a > .badge  {
+	color:#FFC200;
+}
+
+
+
+.hi-icon-effect-1 .hi-icon:after{
+	box-shadow: 0 0 0 4px #FFC200;
+}
+
+
+
+
+.read_more.black:hover, .read_more:hover {border: 2px solid #FFC200;}
+
+.over_about, .blog_title_heading h1 {background-color: rgba(255, 194, 15, 0.9);}
+
+.over {background-color:#FFC200;}
+
+
+
+	
+.cap_style_2_button {border: 3px solid rgb(255, 194, 15); }
+.cap_style_2_button a:hover { color:#FFC200;}
+	
