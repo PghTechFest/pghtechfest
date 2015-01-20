@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
-using PghTechFest.Components;
-using PghTechFest.Components.Domain;
+using PghTechFest.Www.Models;
+using PghTechFest.Www.Models.Domain;
 
 namespace PghTechFest.Www.Controllers
 {
