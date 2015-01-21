@@ -80,7 +80,17 @@
             </div>
         </div>
 
-        
+        <div class="form-group">
+            <label for="Track">Categories</label>
+            <div class="col-md-10">
+                @foreach (var track in ViewBag.Tracks)
+                {
+                    <label class="checkbox">
+                        @track.Name <input type="checkbox" name="Track" value="@track.Id"/>
+                    </label>
+                }
+            </div>
+        </div>
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
