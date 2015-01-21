@@ -123,11 +123,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\images\dicello-pittsburgh.jpg" />
+    <Content Include="Content\images\sponsors\brandingbrand.png" />
+    <Content Include="Content\images\sponsors\cei.png" />
+    <Content Include="Content\images\sponsors\ciber.png" />
+    <Content Include="Content\images\sponsors\component-one.png" />
+    <Content Include="Content\images\sponsors\confluence.png" />
+    <Content Include="Content\images\sponsors\gentech.png" />
+    <Content Include="Content\images\sponsors\iq.png" />
+    <Content Include="Content\images\sponsors\omnyx.png" />
+    <Content Include="Content\images\sponsors\ptc.png" />
+    <Content Include="Content\images\sponsors\summa.png" />
+    <Content Include="Content\images\sponsors\upmc.png" />
     <Content Include="Views\CallForSpeakers\Create.cshtml" />
-    <Content Include="Views\CallForSpeakers\Delete.cshtml" />
-    <Content Include="Views\CallForSpeakers\Details.cshtml" />
-    <Content Include="Views\CallForSpeakers\Edit.cshtml" />
-    <Content Include="Views\CallForSpeakers\Index.cshtml" />
     <Content Include="Content\css\animate.css" />
     <Content Include="Content\css\bootstrap-theme.min.css" />
     <Content Include="Content\css\bootstrap.css" />
@@ -366,6 +373,7 @@
     <Content Include="Content\rs-plugin\js\jquery.themepunch.revolution.js" />
     <Content Include="Content\rs-plugin\js\jquery.themepunch.revolution.min.js" />
     <Content Include="Content\rs-plugin\js\jquery.themepunch.tools.min.js" />
+    <Content Include="Views\CallForSpeakers\Thanks.cshtml" />
     <None Include="Views\Sessions\Index.cshtml" />
     <Content Include="Content\css\style.css" />
     <Content Include="Views\Sponsors\Index.cshtml" />
