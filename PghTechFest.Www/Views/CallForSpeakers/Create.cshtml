@@ -1,105 +1,112 @@
-﻿@model PghTechFest.Www.Models.Domain.Session
+﻿@using System.Web.UI.WebControls
+@model PghTechFest.Www.Models.Domain.Session
 
 @{
     ViewBag.Title = "Create";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Create</h2>
+<div id="welcome" style="background: white;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="logo_welcome">
+                    <h1 class="title">Call for Speakers</h1>
+                </div>
+                <div class="welcome-text" style="text-align: left">
 
-@using (Html.BeginForm()) 
-{
-    @Html.AntiForgeryToken()
-    
-    <div class="form-horizontal">
-        <h4>Session</h4>
-        <hr />
-        @Html.ValidationSummary(true)
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.Title, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Title)
-                @Html.ValidationMessageFor(model => model.Title)
-            </div>
-        </div>
+                    @using (Html.BeginForm("Create", "CallForSpeakers"))
+                    {
+                        @Html.AntiForgeryToken()
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.Description, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Description)
-                @Html.ValidationMessageFor(model => model.Description)
-            </div>
-        </div>
+                        <div class="form-horizontal">
+                            @Html.ValidationSummary(true)
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.LengthInMinutes, new {@class = "control-label col-md-2"})
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.LengthInMinutes)
-                @Html.ValidationMessageFor(model => model.LengthInMinutes)
-            </div>
-        </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Title)
+                                @Html.TextBoxFor(model => model.Title, new { @class = "form-control", placeholder = "Enter the title of your presentation" })
+                                @Html.ValidationMessageFor(model => model.Title)
+                            </div>
 
-        <div class="form-group">
-            <label class="control-label col-md-2" for="Speaker_FirstName">Name</label>
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Speaker.FirstName) @Html.EditorFor(model => model.Speaker.LastName)
-                @Html.ValidationMessageFor(model => model.Speaker.FirstName) @Html.ValidationMessageFor(model => model.Speaker.LastName)
-            </div>
-        </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Description)
+                                @Html.TextAreaFor(model => model.Description, new { @class = "form-control", placeholder = "Enter the synopsis or detail of your presentation", rows = "4" })
+                                @Html.ValidationMessageFor(model => model.Description)
+                            </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.Speaker.EmailAddress, new {@class = "control-label col-md-2"})
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Speaker.EmailAddress)
-                @Html.ValidationMessageFor(model => model.Speaker.EmailAddress)
-            </div>
-        </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.LengthInMinutes)
+                                @Html.TextBoxFor(model => model.LengthInMinutes, new { @class = "form-control col-md-1" })
+                                @Html.ValidationMessageFor(model => model.LengthInMinutes)
+                            </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.Speaker.Bio, new {@class = "control-label col-md-2"})
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Speaker.Bio)
-                @Html.ValidationMessageFor(model => model.Speaker.Bio)
-            </div>
-        </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <label for="Speaker_FirstName">Name</label>
+                                </div>
+                                <div class="col-md-6">
+                                    @Html.TextBoxFor(model => model.Speaker.FirstName, new { @class = "form-control col-xmd-2", placeholder = "Speaker First Name" })
+                                </div>
+                                <div class="col-md-6">
+                                    @Html.TextBoxFor(model => model.Speaker.LastName, new { @class = "form-control col-md-2", placeholder = "Speaker Last Name" })
+                                </div>
+                                @Html.ValidationMessageFor(model => model.Speaker.FirstName) @Html.ValidationMessageFor(model => model.Speaker.LastName)
+                            </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.Speaker.TwitterUserName, new {@class = "control-label col-md-2"})
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Speaker.TwitterUserName)
-                @Html.ValidationMessageFor(model => model.Speaker.TwitterUserName)
-            </div>
-        </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Speaker.EmailAddress) (will not be shared)
+                                @Html.TextBoxFor(model => model.Speaker.EmailAddress, new { @class = "form-control", placeholder = "Speaker email address" })
+                                @Html.ValidationMessageFor(model => model.Speaker.EmailAddress)
+                            </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.Speaker.Comments, new {@class = "control-label col-md-2"})
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Speaker.Comments)
-                @Html.ValidationMessageFor(model => model.Speaker.Comments)
-            </div>
-        </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Speaker.Bio)
+                                @Html.TextAreaFor(model => model.Speaker.Bio, new { @class = "form-control", placeholder = "Brief speaker bio", rows = "4" })
+                                @Html.ValidationMessageFor(model => model.Speaker.Bio)
+                            </div>
 
-        <div class="form-group">
-            <label for="Track">Categories</label>
-            <div class="col-md-10">
-                @foreach (var track in ViewBag.Tracks)
-                {
-                    <label class="checkbox">
-                        @track.Name <input type="checkbox" name="Track" value="@track.Id"/>
-                    </label>
-                }
-            </div>
-        </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Speaker.TwitterUserName)
+                                @Html.TextBoxFor(model => model.Speaker.TwitterUserName, new { @class = "form-control", placeholder = "Twitter username, e.g. 'ThePittsbughTechFest'" })
+                                @Html.ValidationMessageFor(model => model.Speaker.TwitterUserName)
+                            </div>
 
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Speaker.Comments)
+                                @Html.TextAreaFor(model => model.Speaker.Comments, new { @class = "form-control", placeholder = "Any other considerations we should account for when considering your submission", rows = "4" })
+                                @Html.ValidationMessageFor(model => model.Speaker.Comments)
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Track)
+                                    @foreach (var track in ViewBag.Tracks)
+                                    {
+                                        <label class="checkbox" style="margin-left: 20px;">
+                                            <input type="checkbox" name="Track" value="@track.Id"/>
+                                             @track.Name
+                                        </label>
+                                    }
+                                @Html.ValidationMessageFor(model => model.Track)
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Create" class="btn btn-default" />
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                </div>
             </div>
         </div>
     </div>
-}
-
-<div>
-    @Html.ActionLink("Back to List", "Index")
 </div>
+
+@section page_scripts
+{
+    $('#top_menu').addClass('dark_menu');
+    $('#top_menu').removeClass('transparent_menu');
+    $('#logo_dark').html('<img src="~/content/images/logo.png" alt="logo">');
+}

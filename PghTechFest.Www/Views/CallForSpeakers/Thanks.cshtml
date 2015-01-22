@@ -5,7 +5,7 @@
 }
 
 <!-- *** WELCOME STARTS *** -->
-<div id="welcome" style="background: white;">
+<div id="welcome">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -26,3 +26,11 @@
 	</div>
 </div>
 <!-- *** WELCOME END *** -->
+
+@section page_scripts
+{
+    $('#top_menu').addClass('dark_menu');
+    $('#top_menu').removeClass('transparent_menu');
+    $('#logo_dark').html('<img src="~/content/images/logo.png" alt="logo">');
+}
+    

@@ -1,4 +1,6 @@
-﻿using System.Web.Mvc;
+﻿using System;
+using System.Linq;
+using System.Web.Mvc;
 using PghTechFest.Www.Models.Domain;
 using PghTechFest.Www.Models;
 
@@ -7,6 +9,13 @@ namespace PghTechFest.Www.Controllers
     public class CallForSpeakersController : Controller
     {
         private DatabaseContext db = new DatabaseContext();
+
+        // GET: /CallForSpeakers/Create
+        public ActionResult Index()
+        {
+            ViewBag.Tracks = db.Tracks;
+            return View("Create");
+        }
 
         // GET: /CallForSpeakers/Create
         public ActionResult Create()
@@ -29,6 +38,7 @@ namespace PghTechFest.Www.Controllers
                 return RedirectToAction("thanks");
             }
 
+            ViewBag.Tracks = db.Tracks;
             return View(session);
         }
 
