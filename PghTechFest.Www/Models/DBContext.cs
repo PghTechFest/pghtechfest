@@ -7,7 +7,7 @@ namespace PghTechFest.Www.Models
 {
     public class DatabaseContext : DbContext
     {
-        public DatabaseContext() : base("PghTechFest") { }
+        public DatabaseContext() : base("DefaultConnection") { }
 
         public DbSet<Person> People { get; set; }
         public DbSet<ScheduleSlot> ScheduleSlots { get; set; }
