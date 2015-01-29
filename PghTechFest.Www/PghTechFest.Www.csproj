@@ -377,7 +377,7 @@
     <None Include="Views\Sessions\Index.cshtml" />
     <Content Include="Content\css\style.css" />
     <Content Include="Views\Sponsors\Index.cshtml" />
-    <None Include="Views\Place\Index.cshtml" />
+    <None Include="Views\Venue\Index.cshtml" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -391,7 +391,7 @@
     <Compile Include="Controllers\Api-SessionsController.cs" />
     <Compile Include="Controllers\SessionsController.cs" />
     <Compile Include="Controllers\SponsorsController.cs" />
-    <Compile Include="Controllers\PlaceController.cs" />
+    <Compile Include="Controllers\VenueController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

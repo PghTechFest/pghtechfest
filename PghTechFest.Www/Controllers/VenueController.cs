@@ -2,13 +2,13 @@
 
 namespace PghTechFest.Www.Controllers
 {
-    public class PlaceController : Controller
+    public class VenueController : Controller
     {
         //
         // GET: /Venue/
         public ActionResult Index()
         {
-            return View();
+            return View("Index");
         }
 	}
 }
