@@ -36,12 +36,6 @@
                             </div>
 
                             <div class="form-group">
-                                @Html.LabelFor(model => model.LengthInMinutes)
-                                @Html.TextBoxFor(model => model.LengthInMinutes, new { @class = "form-control col-md-1" })
-                                @Html.ValidationMessageFor(model => model.LengthInMinutes)
-                            </div>
-
-                            <div class="form-group">
                                 <div class="col-md-12">
                                     <label for="Speaker_FirstName">Name</label>
                                 </div>
@@ -76,6 +70,18 @@
                                 @Html.LabelFor(model => model.Speaker.Comments)
                                 @Html.TextAreaFor(model => model.Speaker.Comments, new { @class = "form-control", placeholder = "Any other considerations we should account for when considering your submission", rows = "4" })
                                 @Html.ValidationMessageFor(model => model.Speaker.Comments)
+                            </div>
+                            
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.LengthInMinutes)
+                                <div>
+                                    <select name="LengthInMinutes" class="form-control col-md-1">
+                                        <option value="30">30 minutes</option>
+                                        <option value="60">60 minutes</option>
+                                        <option value="-1">either 30 or 60</option>
+                                    </select>
+                                </div>
+                                @Html.ValidationMessageFor(model => model.LengthInMinutes)
                             </div>
 
                             <div class="form-group">
