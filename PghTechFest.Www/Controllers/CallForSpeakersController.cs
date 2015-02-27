@@ -31,12 +31,12 @@ namespace PghTechFest.Www.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(Session session)
         {
-            //if (ModelState.IsValid)
-            //{
+            if (ModelState.IsValid)
+            {
                 db.Sessions.Add(session);
                 db.SaveChanges();
                 return RedirectToAction("thanks");
-            //}
+            }
 
             ViewBag.Tracks = db.Tracks;
             return View(session);

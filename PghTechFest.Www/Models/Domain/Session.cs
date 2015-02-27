@@ -21,6 +21,6 @@ namespace PghTechFest.Www.Models.Domain
         [Display(Name = "Length in Minutes")]
         public int? LengthInMinutes { get; set; }
 
-        public Track Track { get; set; }
+        public string Tracks { get; set; }
     }
 }
