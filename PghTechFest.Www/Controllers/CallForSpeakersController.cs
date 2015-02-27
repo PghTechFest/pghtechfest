@@ -33,6 +33,7 @@ namespace PghTechFest.Www.Controllers
         {
             if (ModelState.IsValid)
             {
+                session.Tracks = ModelState["Tracks"].Value.AttemptedValue;
                 db.Sessions.Add(session);
                 db.SaveChanges();
                 return RedirectToAction("thanks");
