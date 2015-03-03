@@ -20,7 +20,7 @@ namespace PghTechFest.Www.Models
         }
     }
 
-    public class SeedData : DropCreateDatabaseIfModelChanges<DatabaseContext>
+    public class SeedData : CreateDatabaseIfNotExists<DatabaseContext>
     {
         protected override void Seed(DatabaseContext context)
         {
