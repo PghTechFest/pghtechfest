@@ -13,8 +13,9 @@ namespace PghTechFest.Www.Controllers
         // GET: /CallForSpeakers/Create
         public ActionResult Index()
         {
-            ViewBag.Tracks = db.Tracks;
-            return View("Create");
+            //ViewBag.Tracks = db.Tracks;
+            //return View("Create");
+            return View("Closed");
         }
 
         // GET: /CallForSpeakers/Create

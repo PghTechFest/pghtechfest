@@ -374,6 +374,7 @@
     <Content Include="Content\rs-plugin\js\jquery.themepunch.revolution.min.js" />
     <Content Include="Content\rs-plugin\js\jquery.themepunch.tools.min.js" />
     <Content Include="Views\CallForSpeakers\Thanks.cshtml" />
+    <Content Include="Views\CallForSpeakers\Closed.cshtml" />
     <None Include="Views\Sessions\Index.cshtml" />
     <Content Include="Content\css\style.css" />
     <Content Include="Views\Sponsors\Index.cshtml" />
