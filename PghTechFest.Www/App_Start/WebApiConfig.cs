@@ -1,5 +1,7 @@
-﻿using System.Net.Http.Headers;
+﻿using System.Data.Entity.Migrations;
+using System.Net.Http.Headers;
 using System.Web.Http;
+using PghTechFest.Www.Migrations;
 
 namespace PghTechFest.Www.App_Start
 {
@@ -14,6 +16,9 @@ namespace PghTechFest.Www.App_Start
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            var migrator = new DbMigrator(new Configuration());
+            migrator.Update();
         }
     }
 }
