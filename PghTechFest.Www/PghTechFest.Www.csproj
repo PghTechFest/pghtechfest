@@ -387,9 +387,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\CallForSpeakersController.cs" />
-    <Compile Include="Controllers\Api-PeopleController.cs" />
-    <Compile Include="Controllers\Api-ScheduleSlotsController.cs" />
-    <Compile Include="Controllers\Api-SessionsController.cs" />
+    <Compile Include="Controllers\Api-ScheduleController.cs" />
     <Compile Include="Controllers\SessionsController.cs" />
     <Compile Include="Controllers\SponsorsController.cs" />
     <Compile Include="Controllers\VenueController.cs" />
@@ -413,6 +411,8 @@
     <Compile Include="Models\Domain\Person.cs" />
     <Compile Include="Models\Domain\Room.cs" />
     <Compile Include="Models\Domain\Schedule.cs" />
+    <Compile Include="Models\Domain\ScheduleEntry.cs" />
+    <Compile Include="Models\Domain\ScheduleEntryDetail.cs" />
     <Compile Include="Models\Domain\ScheduleSlot.cs" />
     <Compile Include="Models\Domain\Session.cs" />
     <Compile Include="Models\Domain\Track.cs" />
