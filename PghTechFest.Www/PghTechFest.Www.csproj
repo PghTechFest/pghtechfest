@@ -396,8 +396,23 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201502271700392_InitialCreate.cs" />
+    <Compile Include="Migrations\201502271700392_InitialCreate.Designer.cs">
+      <DependentUpon>201502271700392_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504291258423_schedule-shit.cs" />
+    <Compile Include="Migrations\201504291258423_schedule-shit.Designer.cs">
+      <DependentUpon>201504291258423_schedule-shit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504291348250_other-stuff.cs" />
+    <Compile Include="Migrations\201504291348250_other-stuff.Designer.cs">
+      <DependentUpon>201504291348250_other-stuff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DBContext.cs" />
     <Compile Include="Models\Domain\Person.cs" />
+    <Compile Include="Models\Domain\Room.cs" />
+    <Compile Include="Models\Domain\Schedule.cs" />
     <Compile Include="Models\Domain\ScheduleSlot.cs" />
     <Compile Include="Models\Domain\Session.cs" />
     <Compile Include="Models\Domain\Track.cs" />
@@ -437,6 +452,17 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201502271700392_InitialCreate.resx">
+      <DependentUpon>201502271700392_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504291258423_schedule-shit.resx">
+      <DependentUpon>201504291258423_schedule-shit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504291348250_other-stuff.resx">
+      <DependentUpon>201504291348250_other-stuff.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
