@@ -2,10 +2,10 @@
 
 namespace PghTechFest.Www.Controllers
 {
-    public class SessionsController : Controller
+    public class TalksController : Controller
     {
         //
-        // GET: /Sessions/
+        // GET: /Talks/
         public ActionResult Index()
         {
             return View();

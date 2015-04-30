@@ -134,6 +134,10 @@
     <Content Include="Content\images\sponsors\ptc.png" />
     <Content Include="Content\images\sponsors\summa.png" />
     <Content Include="Content\images\sponsors\upmc.png" />
+    <Content Include="Content\js\talks.js" />
+    <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
     <Content Include="Views\CallForSpeakers\Create.cshtml" />
     <Content Include="Content\css\animate.css" />
     <Content Include="Content\css\bootstrap-theme.min.css" />
@@ -375,7 +379,8 @@
     <Content Include="Content\rs-plugin\js\jquery.themepunch.tools.min.js" />
     <Content Include="Views\CallForSpeakers\Thanks.cshtml" />
     <Content Include="Views\CallForSpeakers\Closed.cshtml" />
-    <None Include="Views\Sessions\Index.cshtml" />
+    <Content Include="Scripts\angular.min.js.map" />
+    <None Include="Views\Talks\Index.cshtml" />
     <Content Include="Content\css\style.css" />
     <Content Include="Views\Sponsors\Index.cshtml" />
     <Content Include="Views\Venue\Index.cshtml" />
@@ -388,7 +393,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\CallForSpeakersController.cs" />
     <Compile Include="Controllers\Api-ScheduleController.cs" />
-    <Compile Include="Controllers\SessionsController.cs" />
+    <Compile Include="Controllers\TalksController.cs" />
     <Compile Include="Controllers\SponsorsController.cs" />
     <Compile Include="Controllers\VenueController.cs" />
     <Compile Include="Global.asax.cs">

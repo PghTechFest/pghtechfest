@@ -9,12 +9,12 @@ namespace PghTechFest.Www.Controllers
     public class ScheduleController : ApiController
     {
         // GET api/<controller>
-        public IEnumerable<ScheduleEntry> Get()
+        public IEnumerable<ScheduleEntryDetail> Get()
         {
             var context = new DatabaseContext();
 
             var schedules = context.Schedules
-                .Select(e => new ScheduleEntry()
+                .Select(e => new ScheduleEntryDetail()
                 {
                     SessionId = e.Session.Id,
                     Title = e.Session.Title,
@@ -23,7 +23,10 @@ namespace PghTechFest.Www.Controllers
                     SpeakerLastName = e.Session.Speaker.LastName,
                     StartTime = e.TimeSlot.StartTime,
                     EndTime = e.TimeSlot.EndTime,
-                    Room = e.Room.Name
+                    Room = e.Room.Name,
+                    Description = e.Session.Description,
+                    SpeakerBio = e.Session.Speaker.Bio,
+                    Twitter = e.Session.Speaker.TwitterUserName
                 });
 
             return schedules;
