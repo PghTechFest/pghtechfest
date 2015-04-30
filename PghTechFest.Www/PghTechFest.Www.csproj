@@ -380,7 +380,7 @@
     <Content Include="Views\CallForSpeakers\Thanks.cshtml" />
     <Content Include="Views\CallForSpeakers\Closed.cshtml" />
     <Content Include="Scripts\angular.min.js.map" />
-    <None Include="Views\Talks\Index.cshtml" />
+    <Content Include="Views\Talks\Index.cshtml" />
     <Content Include="Content\css\style.css" />
     <Content Include="Views\Sponsors\Index.cshtml" />
     <Content Include="Views\Venue\Index.cshtml" />
