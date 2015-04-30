@@ -16,7 +16,7 @@ namespace PghTechFest.Www
             System.Data.Entity.Database.SetInitializer(new SeedData());
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
-            RegisterRoutes(RouteTable.Routes);
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
 
         protected void Session_Start(object sender, EventArgs e)
@@ -47,11 +47,6 @@ namespace PghTechFest.Www
         protected void Application_End(object sender, EventArgs e)
         {
 
-        }
-
-        private static void RegisterRoutes(RouteCollection routes)
-        {
-            routes.MapRouteLowercase("Default", "{controller}/{action}/{id}", new { controller = "Home", action = "Index", id = UrlParameter.Optional });
         }
     }
 }
