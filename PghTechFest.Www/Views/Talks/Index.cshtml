@@ -21,3 +21,11 @@
 <!-- AngularJS -->
 <script type="text/javascript" src="~/scripts/angular.min.js"></script>
 <script type="text/javascript" src="~/Content/js/talks.js"></script>
+
+
+@section page_scripts
+{
+    $('#top_menu').addClass('dark_menu');
+    $('#top_menu').removeClass('transparent_menu');
+    $('#logo_dark').html('<img src="~/content/images/logo.png" alt="logo">');
+}
