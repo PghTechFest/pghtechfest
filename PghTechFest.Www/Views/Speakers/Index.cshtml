@@ -7,7 +7,7 @@
     <div class="container">
         <div ng-controller="SpeakerCtrl">
             <div ng-repeat="speaker in speakers">
-                <h3 ng-click="showDetail(speaker.id)">{{speaker.firstName}} {{speaker.lastName}}</h3>
+                <h3 ng-click="showDetail(speaker.id)"><a href="#{{speaker.id}}">{{speaker.firstName}} {{speaker.lastName}}</a></h3>
                 <p><a href="https://twitter.com/{{speaker.twitterUserName}}">{{speaker.twitterUserName}}</a></p>
                 <div ng-show="speaker.id == showDetailFor">
                     <p>{{speaker.bio}}</p>

@@ -8,7 +8,7 @@
         <div ng-controller="TalkCtrl">
             <div ng-repeat="talk in talks">
                 <h3 ng-click="showDetail(talk.sessionId)">{{talk.title}}</h3>
-                <p>{{talk.startTime}} - {{talk.endTime}} in {{talk.room}} by {{talk.speakerFirstName}} {{talk.speakerLastName}}</p>
+                <p>{{talk.startTime}} - {{talk.endTime}} in {{talk.room}} by <a href="/speakers#{{talk.speakerId}}">{{talk.speakerFirstName}} {{talk.speakerLastName}}</a></p>
                 <div ng-show="talk.sessionId == showDetailFor">
                     <p>{{talk.description}}</p>
                 </div>
