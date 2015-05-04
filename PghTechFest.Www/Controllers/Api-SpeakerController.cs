@@ -13,6 +13,10 @@ namespace PghTechFest.Www.Controllers
             var context = new DatabaseContext();
 
             var speakers = context.People
+                .Join(context.Schedules,
+                    p => p.Id,
+                    s => s.Session.Speaker.Id,
+                    (p,s) => p)
                 .OrderBy(s => s.LastName)
                 .Select(e => new Speaker()
                 {
