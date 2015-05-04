@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!-- *** WELCOME STARTS *** -->
+<div id="welcome" ng-app="SpeakerApp">
+    <div class="container">
+        <div ng-controller="SpeakerCtrl">
+            <div ng-repeat="speaker in speakers">
+                <h3 ng-click="showDetail(speaker.id)">{{speaker.firstName}} {{speaker.lastName}}</h3>
+                <p><a href="https://twitter.com/{{speaker.twitterUserName}}">{{speaker.twitterUserName}}</a></p>
+                <div ng-show="speaker.id == showDetailFor">
+                    <p>{{speaker.bio}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- *** WELCOME END *** -->
+
+<!-- AngularJS -->
+<script type="text/javascript" src="~/scripts/angular.min.js"></script>
+<script type="text/javascript" src="~/Content/js/speakers.js"></script>
+
+
+@section page_scripts
+{
+    $('#top_menu').addClass('dark_menu');
+    $('#top_menu').removeClass('transparent_menu');
+    $('#logo_dark').html('<img src="~/content/images/logo.png" alt="logo">');
+}

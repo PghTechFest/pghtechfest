@@ -14,6 +14,7 @@ namespace PghTechFest.Www.Controllers
             var context = new DatabaseContext();
 
             var schedules = context.Schedules
+                .OrderBy(s => s.TimeSlot.Id * 1000 + s.Room.Id)
                 .Select(e => new ScheduleEntryDetail()
                 {
                     SessionId = e.Session.Id,

@@ -134,6 +134,7 @@
     <Content Include="Content\images\sponsors\ptc.png" />
     <Content Include="Content\images\sponsors\summa.png" />
     <Content Include="Content\images\sponsors\upmc.png" />
+    <Content Include="Content\js\speakers.js" />
     <Content Include="Content\js\talks.js" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular.js" />
@@ -393,6 +394,8 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\CallForSpeakersController.cs" />
     <Compile Include="Controllers\Api-ScheduleController.cs" />
+    <Compile Include="Controllers\Api-SpeakerController.cs" />
+    <Compile Include="Controllers\SpeakersController.cs" />
     <Compile Include="Controllers\TalksController.cs" />
     <Compile Include="Controllers\SponsorsController.cs" />
     <Compile Include="Controllers\VenueController.cs" />
@@ -420,6 +423,7 @@
     <Compile Include="Models\Domain\ScheduleEntryDetail.cs" />
     <Compile Include="Models\Domain\ScheduleSlot.cs" />
     <Compile Include="Models\Domain\Session.cs" />
+    <Compile Include="Models\Domain\Speaker.cs" />
     <Compile Include="Models\Domain\Track.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -448,6 +452,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Speakers\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
