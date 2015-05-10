@@ -123,6 +123,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\images\dicello-pittsburgh.jpg" />
+    <Content Include="Content\images\sponsors\2015\Aesynt Logo CMYK %4072pi.jpg" />
+    <Content Include="Content\images\sponsors\2015\Aesynt Logo RGB %4072dpi.jpg" />
+    <Content Include="Content\images\sponsors\2015\BB logo.png" />
+    <Content Include="Content\images\sponsors\2015\Confluence-Logo-Horiz-RGB.png" />
+    <Content Include="Content\images\sponsors\2015\OctopusDeployLogo-800x200-Color.png" />
+    <Content Include="Content\images\sponsors\2015\PghTech Fest SummaLogo.png" />
+    <Content Include="Content\images\sponsors\2015\synergy staffing.png" />
+    <Content Include="Content\images\sponsors\2015\TeleTracking Logo_Green.jpg" />
     <Content Include="Content\images\sponsors\brandingbrand.png" />
     <Content Include="Content\images\sponsors\cei.png" />
     <Content Include="Content\images\sponsors\ciber.png" />
