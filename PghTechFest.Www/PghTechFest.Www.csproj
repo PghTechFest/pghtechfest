@@ -123,25 +123,75 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\images\dicello-pittsburgh.jpg" />
-    <Content Include="Content\images\sponsors\2015\Aesynt Logo CMYK %4072pi.jpg" />
-    <Content Include="Content\images\sponsors\2015\Aesynt Logo RGB %4072dpi.jpg" />
-    <Content Include="Content\images\sponsors\2015\BB logo.png" />
-    <Content Include="Content\images\sponsors\2015\Confluence-Logo-Horiz-RGB.png" />
-    <Content Include="Content\images\sponsors\2015\OctopusDeployLogo-800x200-Color.png" />
-    <Content Include="Content\images\sponsors\2015\PghTech Fest SummaLogo.png" />
-    <Content Include="Content\images\sponsors\2015\synergy staffing.png" />
-    <Content Include="Content\images\sponsors\2015\TeleTracking Logo_Green.jpg" />
-    <Content Include="Content\images\sponsors\brandingbrand.png" />
-    <Content Include="Content\images\sponsors\cei.png" />
-    <Content Include="Content\images\sponsors\ciber.png" />
-    <Content Include="Content\images\sponsors\component-one.png" />
-    <Content Include="Content\images\sponsors\confluence.png" />
-    <Content Include="Content\images\sponsors\gentech.png" />
-    <Content Include="Content\images\sponsors\iq.png" />
-    <Content Include="Content\images\sponsors\omnyx.png" />
-    <Content Include="Content\images\sponsors\ptc.png" />
-    <Content Include="Content\images\sponsors\summa.png" />
-    <Content Include="Content\images\sponsors\upmc.png" />
+    <Content Include="Content\images\sponsors\2015\ae.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\images\sponsors\2015\aesynt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\images\sponsors\2015\brandingbrand.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\images\sponsors\2015\confluence.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\images\sponsors\2015\gentech.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\images\sponsors\2015\laroche.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\images\sponsors\2015\octopus-deploy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\images\sponsors\2015\sdlc.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\images\sponsors\2015\summa.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\images\sponsors\2015\summa.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\images\sponsors\2015\synergy-staffing.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\images\sponsors\2015\teletracking.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\images\sponsors\brandingbrand.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\images\sponsors\cei.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\images\sponsors\ciber.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\images\sponsors\component-one.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\images\sponsors\confluence.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\images\sponsors\gentech.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\images\sponsors\iq.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\images\sponsors\omnyx.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\images\sponsors\ptc.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\images\sponsors\summa.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\images\sponsors\upmc.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\js\speakers.js" />
     <Content Include="Content\js\talks.js" />
     <Content Include="Scripts\angular-mocks.js" />
