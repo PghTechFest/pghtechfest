@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- *** WELCOME STARTS *** -->
+<div id="welcome" style="background: white;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="logo_welcome">
+                    <h1 class="title">Code of Conduct</h1>
+                </div>
+                <div class="welcome-text">
+                    <p>PghTechFest is dedicated to providing an outstanding conference experience for all our attendees, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, financial status, hair color (or hair amount), platform preference, or text editor of choice.</p>
+
+                    <p>We do not tolerate harassment of conference participants in any form, and we would like to take this opportunity to remind all attendees of the basic premise PghTechFest was founded on: passionate, but respectful dialog between our attendees. Please treat your fellow attendees with respect, regardless of the context you’re interacting with each other.</p>
+
+                    <p>Harassment is not appropriate for any conference venue. Conference participants violating these rules may be sanctioned or expelled from the conference, without a refund, at the discretion of the conference organizers.</p>
+
+                    <p>Attendees must remember that PghTechFest staff members are not trained conflict resolution specialists, nor are they security or law enforcement. PghTechFest staff will immediately escalate issues around safety, violence, or similar situations to La Roche staff or law enforcement.</p>
+
+                    <p>For the protection of both attendees and our organization, PghTechFest will never put its staff members in the position of trying to assess whether or not an incident merits escalation. If there is any doubt, we will escalate incidents to the appropriate agency immediately.</p>
+
+                    <h3>Incident Resolution</h3>
+
+                    <ul>
+                        <li>Attendees should follow Bill and Ted’s advice: “Be excellent to each other.” Treat other attendees with respect, regardless of whether you are in a session room or at one of the La Roche’s facilities.</li>
+                        <li>Simple disagreements should be resolved between the individuals concerned.</li>
+                        <li>Harassment or more serious issues should be escalated to a PghTechFest Staff member. That staff member will immediately contact a PghTechFest Board member who has the responsibility to assist in resolution.</li>
+                        <li>Attendees suffering outright assault or extreme harassment should contact the La Roche staff immediately, or a PghTechFest staff member if they’re nearby. PghTechFest staff will immediately escalate to the La Roche staff or law enforcement as appropriate.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- *** WELCOME END *** -->
+@section page_scripts
+{
+    $('#top_menu').addClass('dark_menu');
+    $('#top_menu').removeClass('transparent_menu');
+    $('#logo_dark').html('<img src="~/content/images/logo.png" alt="logo">');
+}

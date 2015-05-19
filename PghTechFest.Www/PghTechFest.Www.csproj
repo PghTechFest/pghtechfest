@@ -453,6 +453,7 @@
     <Compile Include="Controllers\CallForSpeakersController.cs" />
     <Compile Include="Controllers\Api-ScheduleController.cs" />
     <Compile Include="Controllers\Api-SpeakerController.cs" />
+    <Compile Include="Controllers\CoCController.cs" />
     <Compile Include="Controllers\SpeakersController.cs" />
     <Compile Include="Controllers\TalksController.cs" />
     <Compile Include="Controllers\SponsorsController.cs" />
@@ -511,6 +512,9 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Speakers\Index.cshtml" />
+    <Content Include="Views\CoC\Index.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
