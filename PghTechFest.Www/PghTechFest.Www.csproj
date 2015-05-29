@@ -129,6 +129,7 @@
     <Content Include="Content\images\sponsors\2015\aesynt.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\images\sponsors\2015\Bellefield_Logo_250.png" />
     <Content Include="Content\images\sponsors\2015\brandingbrand.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -138,6 +139,7 @@
     <Content Include="Content\images\sponsors\2015\gentech.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\images\sponsors\2015\GrapeCity2015.png" />
     <Content Include="Content\images\sponsors\2015\laroche.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
