@@ -123,6 +123,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\images\dicello-pittsburgh.jpg" />
+    <Content Include="Content\images\Schedule.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\images\sponsors\2015\ae.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -515,6 +518,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Speakers\Index.cshtml" />
     <Content Include="Views\CoC\Index.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\images\Schedule2015.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Web.Debug.config">
