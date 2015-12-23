@@ -3,24 +3,26 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <!-- *** WELCOME STARTS *** -->
-<div id="welcome" ng-app="TalkApp">
-    <div>
-        <a href="~/Content/images/Schedule2015.pdf"><img src="~/Content/images/Schedule.png" /></a>
-    </div>
-    <div class="container">
-        <div ng-controller="TalkCtrl">
-            <div ng-repeat="talk in talks">
-                <h3 ng-click="showDetail(talk.sessionId)">{{talk.title}}</h3>
-                <p>{{talk.startTime}} - {{talk.endTime}} in {{talk.room}} by <a href="/speakers#{{talk.speakerId}}">{{talk.speakerFirstName}} {{talk.speakerLastName}}</a></p>
-                <div ng-show="talk.sessionId == showDetailFor">
-                    <p>{{talk.description}}</p>
+<!--
+    <div id="welcome" ng-app="TalkApp">
+        <div>
+            <a href="~/Content/images/Schedule2015.pdf"><img src="~/Content/images/Schedule.png" /></a>
+        </div>
+        <div class="container">
+            <div ng-controller="TalkCtrl">
+                <div ng-repeat="talk in talks">
+                    <h3 ng-click="showDetail(talk.sessionId)">{{talk.title}}</h3>
+                    <p>{{talk.startTime}} - {{talk.endTime}} in {{talk.room}} by <a href="/speakers#{{talk.speakerId}}">{{talk.speakerFirstName}} {{talk.speakerLastName}}</a></p>
+                    <div ng-show="talk.sessionId == showDetailFor">
+                        <p>{{talk.description}}</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    -->
 <!-- *** WELCOME END *** -->
-
+<div><h3>Our call for talks will go out in March...</h3></div>
 <!-- AngularJS -->
 <script type="text/javascript" src="~/scripts/angular.min.js"></script>
 <script type="text/javascript" src="~/Content/js/talks.js"></script>
